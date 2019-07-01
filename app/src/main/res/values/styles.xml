@@ -12,6 +12,10 @@
         <item name="windowNoTitle">true</item>
     </style>
 
+    <style name="AppTheme.SplashTheme" parent="AppTheme">
+        <item name="android:windowBackground">@drawable/splash_logo</item>
+    </style>
+
     <style name="ToolbarTheme" parent="ThemeOverlay.MaterialComponents.ActionBar">
         <item name="android:textColorPrimary">@color/primaryTextColor</item>
         <item name="android:textColorSecondary">@color/primaryTextColor</item>
