@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">ArchitectureComponentsSample</string>
+    <string name="stored_albums_view_title">Stored albums</string>
+    <string name="artist_search_view_title">Artist search</string>
+    <string name="top_albums_view_title">Top albums</string>
+    <string name="album_detail_view_title">Album detail</string>
+    <string name="loading">Loading…</string>
+    <string name="item_artist_listeners_title">Listeners</string>
+    <string name="item_album_playcount_title">Album play count</string>
+    <string name="item_track_name_title">Track name</string>
+    <string name="item_track_duration_title">Track duration</string>
+    <string name="no_albums_stored_yet">You don\'t have stored any album yet. Let\'s start searching artists.</string>
+    <string name="album_stored">The album was stored</string>
+    <string name="album_deleted">The album was deleted</string>
+
+    <!-- Error messages -->
+    <string name="no_artists_on_search">No artist has been found</string>
+    <string name="no_albums_found">No albums has been found</string>
+    <string name="no_album_detail_found">No album detail has been found</string>
+    <string name="got_it">Got it!</string>
+
+</resources>

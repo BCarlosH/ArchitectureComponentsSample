@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools" android:id="@+id/navigation"
+            app:startDestination="@id/albumListFragment">
+
+    <fragment android:id="@+id/albumListFragment"
+              android:name="com.example.bcarlosh.architecturecomponentssample.ui.storedalbumlist.StoredAlbumListFragment"
+              android:label="@string/stored_albums_view_title" tools:layout="@layout/album_list_fragment">
+        <action android:id="@+id/action_albumListFragment_to_artistSearchFragment"
+                app:destination="@id/artistSearchFragment"
+                app:enterAnim="@anim/slide_in_right" app:exitAnim="@anim/slide_out_left"
+                app:popEnterAnim="@anim/slide_in_left" app:popExitAnim="@anim/slide_out_right"/>
+        <action android:id="@+id/action_albumListFragment_to_albumDetailActivity"
+                app:destination="@id/albumDetailActivity" app:popEnterAnim="@anim/slide_in_left"
+                app:popExitAnim="@anim/slide_out_right" app:enterAnim="@anim/slide_in_right"
+                app:exitAnim="@anim/slide_out_left"/>
+    </fragment>
+
+    <fragment android:id="@+id/artistTopAlbumsFragment"
+              android:name="com.example.bcarlosh.architecturecomponentssample.ui.artisttopalbum.ArtistTopAlbumsFragment"
+              android:label="@string/top_albums_view_title" tools:layout="@layout/artist_top_albums_fragment">
+        <argument android:name="artistName" app:argType="string"/>
+        <action android:id="@+id/action_artistTopAlbumsFragment_to_albumDetailActivity"
+                app:destination="@id/albumDetailActivity" app:enterAnim="@anim/slide_in_right"
+                app:exitAnim="@anim/slide_out_left" app:popEnterAnim="@anim/slide_in_left"
+                app:popExitAnim="@anim/slide_out_right"/>
+    </fragment>
+
+    <fragment android:id="@+id/artistSearchFragment"
+              android:name="com.example.bcarlosh.architecturecomponentssample.ui.artistsearch.ArtistSearchFragment"
+              android:label="@string/artist_search_view_title" tools:layout="@layout/artist_search_fragment">
+        <action android:id="@+id/action_artistSearchFragment_to_artistTopAlbumsFragment"
+                app:destination="@id/artistTopAlbumsFragment" app:enterAnim="@anim/slide_in_right"
+                app:exitAnim="@anim/slide_out_left" app:popEnterAnim="@anim/slide_in_left"
+                app:popExitAnim="@anim/slide_out_right"/>
+    </fragment>
+    <activity android:id="@+id/albumDetailActivity"
+              android:name="com.example.bcarlosh.architecturecomponentssample.ui.albumdetail.AlbumDetailActivity"
+              android:label="activity_album_detail" tools:layout="@layout/activity_album_detail">
+        <argument android:name="artistName" app:argType="string"/>
+        <argument android:name="albumName" app:argType="string"/>
+    </activity>
+
+</navigation>
