@@ -10,6 +10,7 @@ apply plugin: "androidx.navigation.safeargs"
 
 
 android {
+
     compileSdkVersion 28
     buildToolsVersion "29.0.0"
     defaultConfig {
@@ -18,14 +19,28 @@ android {
         targetSdkVersion 28
         versionCode 1
         versionName "1.0"
-        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        testInstrumentationRunner "com.example.bcarlosh.architecturecomponentssample.base.TIRunner"
     }
+
     buildTypes {
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
+
+    sourceSets {
+        main {
+            assets.srcDirs = ['src/main/assets', 'src/test/assets/', 'src/androidTest/assets/']
+        }
+        test {
+            java.srcDirs += 'src/sharedTest/java'
+        }
+        androidTest {
+            java.srcDirs += 'src/sharedTest/java'
+        }
+    }
+
 }
 
 dependencies {
@@ -62,7 +77,6 @@ dependencies {
     api "org.koin:koin-android:$koin_version"
     api "org.koin:koin-androidx-viewmodel:$koin_version"
     api "org.koin:koin-androidx-scope:$koin_version"
-    testImplementation "org.koin:koin-test:$koin_version"
 
     //Retrofit
     implementation "com.squareup.retrofit2:retrofit:$retrofit_version"
@@ -80,14 +94,19 @@ dependencies {
     implementation "com.github.bumptech.glide:glide:$glide_version"
     kapt "com.github.bumptech.glide:compiler:$glide_version"
 
-    // Mockito
+    // Unit Testing
+    testImplementation 'junit:junit:4.12'
+    testImplementation "org.koin:koin-test:$koin_version"
+    testImplementation "com.squareup.okhttp3:mockwebserver:$okhttp3_version"
     testImplementation "org.mockito:mockito-core:$mockito_version"
     testImplementation "com.nhaarman.mockitokotlin2:mockito-kotlin:$mockitokotlin_version"
 
-    // Test
+    // Instrumentation Testing
     androidTestImplementation 'androidx.test.ext:junit:1.1.1'
     androidTestImplementation 'androidx.test:rules:1.2.0'
     androidTestImplementation 'androidx.test:runner:1.2.0'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+    androidTestImplementation "com.squareup.okhttp3:mockwebserver:$okhttp3_version"
+    androidTestImplementation "org.koin:koin-test:$koin_version"
 
 }

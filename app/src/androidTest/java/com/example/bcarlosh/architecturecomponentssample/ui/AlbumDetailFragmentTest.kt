@@ -1,4 +1,4 @@
-package com.example.bcarlosh.architecturecomponentssample
+package com.example.bcarlosh.architecturecomponentssample.ui
 
 import android.util.Log
 import android.view.KeyEvent
@@ -9,10 +9,10 @@ import androidx.test.espresso.assertion.ViewAssertions.matches
 import androidx.test.espresso.matcher.ViewMatchers.*
 import androidx.test.ext.junit.runners.AndroidJUnit4
 import androidx.test.rule.ActivityTestRule
+import com.example.bcarlosh.architecturecomponentssample.R
 import com.example.bcarlosh.architecturecomponentssample.instrumentationtestutils.RecyclerViewMatcher.Companion.withRecyclerView
 import com.example.bcarlosh.architecturecomponentssample.instrumentationtestutils.withCollapsibleToolbarTitle
 import com.example.bcarlosh.architecturecomponentssample.instrumentationtestutils.withDrawable
-import com.example.bcarlosh.architecturecomponentssample.ui.MainActivity
 import com.google.android.material.appbar.CollapsingToolbarLayout
 import org.hamcrest.CoreMatchers.`is`
 import org.junit.AfterClass

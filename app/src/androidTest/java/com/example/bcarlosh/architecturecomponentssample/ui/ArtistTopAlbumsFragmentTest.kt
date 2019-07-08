@@ -1,4 +1,4 @@
-package com.example.bcarlosh.architecturecomponentssample
+package com.example.bcarlosh.architecturecomponentssample.ui
 
 import android.util.Log
 import android.view.KeyEvent
@@ -8,8 +8,9 @@ import androidx.test.espresso.assertion.ViewAssertions.matches
 import androidx.test.espresso.matcher.ViewMatchers.*
 import androidx.test.ext.junit.runners.AndroidJUnit4
 import androidx.test.rule.ActivityTestRule
+import com.example.bcarlosh.architecturecomponentssample.R
+import com.example.bcarlosh.architecturecomponentssample.instrumentationtestutils.RecyclerViewMatcher
 import com.example.bcarlosh.architecturecomponentssample.instrumentationtestutils.RecyclerViewMatcher.Companion.withRecyclerView
-import com.example.bcarlosh.architecturecomponentssample.ui.MainActivity
 import org.junit.AfterClass
 import org.junit.BeforeClass
 import org.junit.Rule
@@ -18,7 +19,7 @@ import org.junit.runner.RunWith
 
 
 @RunWith(AndroidJUnit4::class)
-class ArtistSearchFragmentTest {
+class ArtistTopAlbumsFragmentTest {
 
     @Rule
     @JvmField
@@ -43,26 +44,21 @@ class ArtistSearchFragmentTest {
 
 
     @Test
-    fun checkSearchErrorResult() {
+    fun checkTopAlbumList() {
 
-        onView(withId(R.id.search_imageView))
+        navigateToTopAlbum()
+
+        onView(withRecyclerView(R.id.top_albums_recycler_view).atPosition(0))
             .check(matches(isDisplayed()))
-            .perform(click())
+            .check(matches(hasDescendant(withText("Senderos De Traición"))))
 
-        onView(withId(androidx.appcompat.R.id.search_src_text))
-            .perform(typeText("Heroes delfffffgggggppppp"))
-            .perform(pressKey(KeyEvent.KEYCODE_ENTER))
-
-        Thread.sleep(2000)
-
-        onView(withId(R.id.error_view_textView))
+        onView(withId(R.id.top_albums_recycler_view))
             .check(matches(isDisplayed()))
-            .check(matches(withText(R.string.no_artists_on_search)))
+            .perform(swipeDown())
 
     }
 
-    @Test
-    fun checkSearchSuccessResult() {
+    private fun navigateToTopAlbum() {
 
         onView(withId(R.id.search_imageView))
             .check(matches(isDisplayed()))
@@ -74,13 +70,11 @@ class ArtistSearchFragmentTest {
 
         Thread.sleep(2000)
 
-        onView(withRecyclerView(R.id.artist_search_recycler_view).atPosition(0))
+        onView(RecyclerViewMatcher.withRecyclerView(R.id.artist_search_recycler_view).atPosition(0))
             .check(matches(isDisplayed()))
-            .check(matches(hasDescendant(withText("Héroes del Silencio"))))
+            .perform(click())
 
-        onView(withId(R.id.artist_search_recycler_view))
-            .check(matches(isDisplayed()))
-            .perform(swipeUp())
+        Thread.sleep(2000)
 
     }
 

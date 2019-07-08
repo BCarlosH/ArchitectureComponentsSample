@@ -1,4 +1,4 @@
-package com.example.bcarlosh.architecturecomponentssample
+package com.example.bcarlosh.architecturecomponentssample.ui
 
 import android.util.Log
 import androidx.test.espresso.Espresso.onView
@@ -7,7 +7,7 @@ import androidx.test.espresso.assertion.ViewAssertions.matches
 import androidx.test.espresso.matcher.ViewMatchers.*
 import androidx.test.ext.junit.runners.AndroidJUnit4
 import androidx.test.rule.ActivityTestRule
-import com.example.bcarlosh.architecturecomponentssample.ui.MainActivity
+import com.example.bcarlosh.architecturecomponentssample.R
 import org.junit.AfterClass
 import org.junit.BeforeClass
 import org.junit.Rule
