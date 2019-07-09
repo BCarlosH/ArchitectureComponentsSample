@@ -1,46 +1,40 @@
 package com.example.bcarlosh.architecturecomponentssample.ui
 
-import android.util.Log
 import android.view.KeyEvent
 import androidx.test.espresso.Espresso.onView
 import androidx.test.espresso.action.ViewActions.*
 import androidx.test.espresso.assertion.ViewAssertions.matches
 import androidx.test.espresso.matcher.ViewMatchers.*
 import androidx.test.ext.junit.runners.AndroidJUnit4
+import androidx.test.filters.LargeTest
 import androidx.test.rule.ActivityTestRule
 import com.example.bcarlosh.architecturecomponentssample.R
+import com.example.bcarlosh.architecturecomponentssample.base.BaseIT
 import com.example.bcarlosh.architecturecomponentssample.instrumentationtestutils.RecyclerViewMatcher
 import com.example.bcarlosh.architecturecomponentssample.instrumentationtestutils.RecyclerViewMatcher.Companion.withRecyclerView
-import org.junit.AfterClass
-import org.junit.BeforeClass
+import org.junit.Before
 import org.junit.Rule
 import org.junit.Test
 import org.junit.runner.RunWith
+import java.net.HttpURLConnection
 
 
 @RunWith(AndroidJUnit4::class)
-class ArtistTopAlbumsFragmentTest {
-
-    @Rule
-    @JvmField
-    val rule = ActivityTestRule(MainActivity::class.java, true, true)
+@LargeTest
+class ArtistTopAlbumsFragmentTest : BaseIT() {
 
 
-    companion object {
+    @get:Rule
+    val activityRule = ActivityTestRule(MainActivity::class.java, true, false)
 
-        @BeforeClass
-        @JvmStatic
-        fun before_class_method() {
-            Log.e("@Before Class", "Run before anything")
-        }
 
-        @AfterClass
-        @JvmStatic
-        fun after_class_method() {
-            Log.e("@After Class", "Run after everything")
-        }
-
+    @Before
+    override fun setUp() {
+        super.setUp()
+        activityRule.launchActivity(null)
     }
+
+    override fun isMockServerEnabled() = true
 
 
     @Test
@@ -59,6 +53,7 @@ class ArtistTopAlbumsFragmentTest {
     }
 
     private fun navigateToTopAlbum() {
+        mockHttpResponse("artist_search.json", HttpURLConnection.HTTP_OK)
 
         onView(withId(R.id.search_imageView))
             .check(matches(isDisplayed()))
@@ -68,13 +63,15 @@ class ArtistTopAlbumsFragmentTest {
             .perform(typeText("Heroes del"))
             .perform(pressKey(KeyEvent.KEYCODE_ENTER))
 
-        Thread.sleep(2000)
+        Thread.sleep(500)
+
+        mockHttpResponse("artist_top_albums.json", HttpURLConnection.HTTP_OK)
 
         onView(RecyclerViewMatcher.withRecyclerView(R.id.artist_search_recycler_view).atPosition(0))
             .check(matches(isDisplayed()))
             .perform(click())
 
-        Thread.sleep(2000)
+        Thread.sleep(500)
 
     }
 

@@ -1,6 +1,5 @@
 package com.example.bcarlosh.architecturecomponentssample.ui
 
-import android.util.Log
 import android.view.KeyEvent
 import androidx.test.espresso.Espresso.onView
 import androidx.test.espresso.action.ViewActions
@@ -10,42 +9,34 @@ import androidx.test.espresso.matcher.ViewMatchers.*
 import androidx.test.ext.junit.runners.AndroidJUnit4
 import androidx.test.rule.ActivityTestRule
 import com.example.bcarlosh.architecturecomponentssample.R
+import com.example.bcarlosh.architecturecomponentssample.base.BaseIT
 import com.example.bcarlosh.architecturecomponentssample.instrumentationtestutils.RecyclerViewMatcher.Companion.withRecyclerView
 import com.example.bcarlosh.architecturecomponentssample.instrumentationtestutils.withCollapsibleToolbarTitle
 import com.example.bcarlosh.architecturecomponentssample.instrumentationtestutils.withDrawable
 import com.google.android.material.appbar.CollapsingToolbarLayout
 import org.hamcrest.CoreMatchers.`is`
-import org.junit.AfterClass
-import org.junit.BeforeClass
+import org.junit.Before
 import org.junit.Rule
 import org.junit.Test
 import org.junit.runner.RunWith
+import java.net.HttpURLConnection
 
 
 @RunWith(AndroidJUnit4::class)
-class AlbumDetailFragmentTest {
+class AlbumDetailFragmentTest : BaseIT() {
 
 
-    @Rule
-    @JvmField
-    val rule = ActivityTestRule(MainActivity::class.java, true, true)
+    @get:Rule
+    val activityRule = ActivityTestRule(MainActivity::class.java, true, false)
 
 
-    companion object {
-
-        @BeforeClass
-        @JvmStatic
-        fun before_class_method() {
-            Log.e("@Before Class", "Run before anything")
-        }
-
-        @AfterClass
-        @JvmStatic
-        fun after_class_method() {
-            Log.e("@After Class", "Run after everything")
-        }
-
+    @Before
+    override fun setUp() {
+        super.setUp()
+        activityRule.launchActivity(null)
     }
+
+    override fun isMockServerEnabled() = true
 
 
     @Test
@@ -66,6 +57,7 @@ class AlbumDetailFragmentTest {
     }
 
     private fun navigateToAlbumDetail() {
+        mockHttpResponse("artist_search.json", HttpURLConnection.HTTP_OK)
 
         onView(withId(R.id.search_imageView))
             .check(matches(isDisplayed()))
@@ -75,19 +67,23 @@ class AlbumDetailFragmentTest {
             .perform(typeText("Heroes del"))
             .perform(pressKey(KeyEvent.KEYCODE_ENTER))
 
-        Thread.sleep(2000)
+        Thread.sleep(500)
+
+        mockHttpResponse("artist_top_albums.json", HttpURLConnection.HTTP_OK)
 
         onView(withRecyclerView(R.id.artist_search_recycler_view).atPosition(0))
             .check(matches(isDisplayed()))
             .perform(click())
 
-        Thread.sleep(2000)
+        Thread.sleep(500)
+
+        mockHttpResponse("album_info.json", HttpURLConnection.HTTP_OK)
 
         onView(withRecyclerView(R.id.top_albums_recycler_view).atPosition(0))
             .check(matches(isDisplayed()))
             .perform(click())
 
-        Thread.sleep(2000)
+        Thread.sleep(500)
 
     }
 
@@ -105,7 +101,7 @@ class AlbumDetailFragmentTest {
         onView(withRecyclerView(R.id.album_detail_tracks_recycler_view).atPosition(0))
             .check(matches(isDisplayed()))
             .check(matches(hasDescendant(withText("Entre Dos Tierras"))))
-            .check(matches(hasDescendant(withText("05:48"))))
+            .check(matches(hasDescendant(withText("06:05"))))
 
     }
 

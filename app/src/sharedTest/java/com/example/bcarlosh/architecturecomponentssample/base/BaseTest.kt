@@ -15,13 +15,13 @@ abstract class BaseTest : KoinTest {
 
     @Before
     open fun setUp() {
-        Log.e("@Before Class", "Run before anything")
+        Log.e("@Before", "Run before anything")
         configureMockServer()
     }
 
     @After
     open fun tearDown() {
-        Log.e("@After Class", "Run after everything")
+        Log.e("@After", "Run after everything")
         stopMockServer()
         stopKoin()
     }
@@ -46,7 +46,13 @@ abstract class BaseTest : KoinTest {
         }
     }
 
-    fun getMockUrl() = mockServer.url("/").toString()
+    fun getMockUrl(): String {
+        return if (isMockServerEnabled()) {
+            mockServer.url("/").toString()
+        } else {
+            "http://localhost/"
+        }
+    }
     //endregion
 
 }

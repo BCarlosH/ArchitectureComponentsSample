@@ -1,6 +1,5 @@
 package com.example.bcarlosh.architecturecomponentssample.ui
 
-import android.util.Log
 import android.view.KeyEvent
 import androidx.test.espresso.Espresso.onView
 import androidx.test.espresso.action.ViewActions.*
@@ -31,7 +30,6 @@ class ArtistSearchFragmentTest : BaseIT() {
     @Before
     override fun setUp() {
         super.setUp()
-        Log.e("@Before Class", "Run before anything")
         activityRule.launchActivity(null)
     }
 

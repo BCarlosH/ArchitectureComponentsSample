@@ -1,5 +1,6 @@
 package com.example.bcarlosh.architecturecomponentssample.di
 
+import android.util.Log
 import com.example.bcarlosh.architecturecomponentssample.data.network.LastFmApiService
 import com.example.bcarlosh.architecturecomponentssample.data.network.LastFmNetworkDataSource
 import com.example.bcarlosh.architecturecomponentssample.data.network.LastFmNetworkDataSourceImpl
@@ -29,7 +30,7 @@ fun configureNetworkModuleForTest(baseApi: String) = module {
 
     //region Interceptors
     factory<Interceptor> {
-        HttpLoggingInterceptor(HttpLoggingInterceptor.Logger { println("API-TESTING: $it") })
+        HttpLoggingInterceptor(HttpLoggingInterceptor.Logger { Log.d("API-TESTING: ", it) })
             .setLevel(HttpLoggingInterceptor.Level.BODY)
     }
 

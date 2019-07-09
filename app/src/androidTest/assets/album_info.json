@@ -1,0 +1,268 @@
+{
+  "album": {
+    "name": "Senderos De Traición",
+    "artist": "Héroes del Silencio",
+    "mbid": "ccf687e1-d013-426b-b5d3-aa3c50a93929",
+    "url": "https://www.last.fm/music/H%C3%A9roes+del+Silencio/Senderos+De+Traici%C3%B3n",
+    "image": [
+      {
+        "#text": "https://lastfm-img2.akamaized.net/i/u/34s/f5f80c8d6aee45da83bcfc3d8b8477b1.png",
+        "size": "small"
+      },
+      {
+        "#text": "https://lastfm-img2.akamaized.net/i/u/64s/f5f80c8d6aee45da83bcfc3d8b8477b1.png",
+        "size": "medium"
+      },
+      {
+        "#text": "https://lastfm-img2.akamaized.net/i/u/174s/f5f80c8d6aee45da83bcfc3d8b8477b1.png",
+        "size": "large"
+      },
+      {
+        "#text": "https://lastfm-img2.akamaized.net/i/u/300x300/f5f80c8d6aee45da83bcfc3d8b8477b1.png",
+        "size": "extralarge"
+      },
+      {
+        "#text": "https://lastfm-img2.akamaized.net/i/u/300x300/f5f80c8d6aee45da83bcfc3d8b8477b1.png",
+        "size": "mega"
+      },
+      {
+        "#text": "https://lastfm-img2.akamaized.net/i/u/300x300/f5f80c8d6aee45da83bcfc3d8b8477b1.png",
+        "size": ""
+      }
+    ],
+    "listeners": "100019",
+    "playcount": "1068013",
+    "tracks": {
+      "track": [
+        {
+          "name": "Entre Dos Tierras",
+          "url": "https://www.last.fm/music/H%C3%A9roes+del+Silencio/_/Entre+Dos+Tierras",
+          "duration": "365",
+          "@attr": {
+            "rank": "1"
+          },
+          "streamable": {
+            "#text": "0",
+            "fulltrack": "0"
+          },
+          "artist": {
+            "name": "Héroes del Silencio",
+            "mbid": "4bb712d6-8be9-4c09-810a-eb3bed2be345",
+            "url": "https://www.last.fm/music/H%C3%A9roes+del+Silencio"
+          }
+        },
+        {
+          "name": "Maldito Duende",
+          "url": "https://www.last.fm/music/H%C3%A9roes+del+Silencio/_/Maldito+Duende",
+          "duration": "305",
+          "@attr": {
+            "rank": "2"
+          },
+          "streamable": {
+            "#text": "0",
+            "fulltrack": "0"
+          },
+          "artist": {
+            "name": "Héroes del Silencio",
+            "mbid": "4bb712d6-8be9-4c09-810a-eb3bed2be345",
+            "url": "https://www.last.fm/music/H%C3%A9roes+del+Silencio"
+          }
+        },
+        {
+          "name": "La Carta",
+          "url": "https://www.last.fm/music/H%C3%A9roes+del+Silencio/_/La+Carta",
+          "duration": "184",
+          "@attr": {
+            "rank": "3"
+          },
+          "streamable": {
+            "#text": "0",
+            "fulltrack": "0"
+          },
+          "artist": {
+            "name": "Héroes del Silencio",
+            "mbid": "4bb712d6-8be9-4c09-810a-eb3bed2be345",
+            "url": "https://www.last.fm/music/H%C3%A9roes+del+Silencio"
+          }
+        },
+        {
+          "name": "Malas Intenciones",
+          "url": "https://www.last.fm/music/H%C3%A9roes+del+Silencio/_/Malas+Intenciones",
+          "duration": "230",
+          "@attr": {
+            "rank": "4"
+          },
+          "streamable": {
+            "#text": "0",
+            "fulltrack": "0"
+          },
+          "artist": {
+            "name": "Héroes del Silencio",
+            "mbid": "4bb712d6-8be9-4c09-810a-eb3bed2be345",
+            "url": "https://www.last.fm/music/H%C3%A9roes+del+Silencio"
+          }
+        },
+        {
+          "name": "Sal",
+          "url": "https://www.last.fm/music/H%C3%A9roes+del+Silencio/_/Sal",
+          "duration": "20",
+          "@attr": {
+            "rank": "5"
+          },
+          "streamable": {
+            "#text": "0",
+            "fulltrack": "0"
+          },
+          "artist": {
+            "name": "Héroes del Silencio",
+            "mbid": "4bb712d6-8be9-4c09-810a-eb3bed2be345",
+            "url": "https://www.last.fm/music/H%C3%A9roes+del+Silencio"
+          }
+        },
+        {
+          "name": "Senda",
+          "url": "https://www.last.fm/music/H%C3%A9roes+del+Silencio/_/Senda",
+          "duration": "239",
+          "@attr": {
+            "rank": "6"
+          },
+          "streamable": {
+            "#text": "0",
+            "fulltrack": "0"
+          },
+          "artist": {
+            "name": "Héroes del Silencio",
+            "mbid": "4bb712d6-8be9-4c09-810a-eb3bed2be345",
+            "url": "https://www.last.fm/music/H%C3%A9roes+del+Silencio"
+          }
+        },
+        {
+          "name": "Hechizo",
+          "url": "https://www.last.fm/music/H%C3%A9roes+del+Silencio/_/Hechizo",
+          "duration": "271",
+          "@attr": {
+            "rank": "7"
+          },
+          "streamable": {
+            "#text": "0",
+            "fulltrack": "0"
+          },
+          "artist": {
+            "name": "Héroes del Silencio",
+            "mbid": "4bb712d6-8be9-4c09-810a-eb3bed2be345",
+            "url": "https://www.last.fm/music/H%C3%A9roes+del+Silencio"
+          }
+        },
+        {
+          "name": "Oración",
+          "url": "https://www.last.fm/music/H%C3%A9roes+del+Silencio/_/Oraci%C3%B3n",
+          "duration": "247",
+          "@attr": {
+            "rank": "8"
+          },
+          "streamable": {
+            "#text": "0",
+            "fulltrack": "0"
+          },
+          "artist": {
+            "name": "Héroes del Silencio",
+            "mbid": "4bb712d6-8be9-4c09-810a-eb3bed2be345",
+            "url": "https://www.last.fm/music/H%C3%A9roes+del+Silencio"
+          }
+        },
+        {
+          "name": "Despertar",
+          "url": "https://www.last.fm/music/H%C3%A9roes+del+Silencio/_/Despertar",
+          "duration": "170",
+          "@attr": {
+            "rank": "9"
+          },
+          "streamable": {
+            "#text": "0",
+            "fulltrack": "0"
+          },
+          "artist": {
+            "name": "Héroes del Silencio",
+            "mbid": "4bb712d6-8be9-4c09-810a-eb3bed2be345",
+            "url": "https://www.last.fm/music/H%C3%A9roes+del+Silencio"
+          }
+        },
+        {
+          "name": "Decadencia",
+          "url": "https://www.last.fm/music/H%C3%A9roes+del+Silencio/_/Decadencia",
+          "duration": "256",
+          "@attr": {
+            "rank": "10"
+          },
+          "streamable": {
+            "#text": "0",
+            "fulltrack": "0"
+          },
+          "artist": {
+            "name": "Héroesdel Silencio",
+            "mbid": "4bb712d6-8be9-4c09-810a-eb3bed2be345",
+            "url": "https://www.last.fm/music/H%C3%A9roes+del+Silencio"
+          }
+        },
+        {
+          "name": "Con Nombre De Guerra",
+          "url": "https://www.last.fm/music/H%C3%A9roes+del+Silencio/_/Con+Nombre+De+Guerra",
+          "duration": "286",
+          "@attr": {
+            "rank": "11"
+          },
+          "streamable": {
+            "#text": "0",
+            "fulltrack": "0"
+          },
+          "artist": {
+            "name": "Héroes del Silencio",
+            "mbid": "4bb712d6-8be9-4c09-810a-eb3bed2be345",
+            "url": "https://www.last.fm/music/H%C3%A9roes+del+Silencio"
+          }
+        },
+        {
+          "name": "El Cuadro II",
+          "url": "https://www.last.fm/music/H%C3%A9roes+del+Silencio/_/El+Cuadro+II",
+          "duration": "243",
+          "@attr": {
+            "rank": "12"
+          },
+          "streamable": {
+            "#text": "0",
+            "fulltrack": "0"
+          },
+          "artist": {
+            "name": "Héroes del Silencio",
+            "mbid": "4bb712d6-8be9-4c09-810a-eb3bed2be345",
+            "url": "https://www.last.fm/music/H%C3%A9roes+del+Silencio"
+          }
+        }
+      ]
+    },
+    "tags": {
+      "tag": [
+        {
+          "name": "rock",
+          "url": "https://www.last.fm/tag/rock"
+        },
+        {
+          "name": "Spanish Rock",
+          "url": "https://www.last.fm/tag/Spanish+Rock"
+        },
+        {
+          "name": "rock español",
+          "url": "https://www.last.fm/tag/rock+espa%C3%B1ol"
+        },
+        {
+          "name": "post-punk",
+          "url": "https://www.last.fm/tag/post-punk"
+        },
+        {
+          "name": "spanish",
+          "url": "https://www.last.fm/tag/spanish"
+        }
+      ]
+    }
+  }
+}

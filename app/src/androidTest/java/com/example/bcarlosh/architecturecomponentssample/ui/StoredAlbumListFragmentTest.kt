@@ -1,43 +1,35 @@
 package com.example.bcarlosh.architecturecomponentssample.ui
 
-import android.util.Log
 import androidx.test.espresso.Espresso.onView
 import androidx.test.espresso.action.ViewActions.click
 import androidx.test.espresso.assertion.ViewAssertions.matches
 import androidx.test.espresso.matcher.ViewMatchers.*
 import androidx.test.ext.junit.runners.AndroidJUnit4
+import androidx.test.filters.LargeTest
 import androidx.test.rule.ActivityTestRule
 import com.example.bcarlosh.architecturecomponentssample.R
-import org.junit.AfterClass
-import org.junit.BeforeClass
+import com.example.bcarlosh.architecturecomponentssample.base.BaseIT
+import org.junit.Before
 import org.junit.Rule
 import org.junit.Test
 import org.junit.runner.RunWith
 
 
 @RunWith(AndroidJUnit4::class)
-class StoredAlbumListFragmentTest {
+@LargeTest
+class StoredAlbumListFragmentTest : BaseIT() {
 
-    @Rule
-    @JvmField
-    val rule = ActivityTestRule(MainActivity::class.java, true, true)
+    @get:Rule
+    val activityRule = ActivityTestRule(MainActivity::class.java, true, false)
 
 
-    companion object {
-
-        @BeforeClass
-        @JvmStatic
-        fun before_class_method() {
-            Log.e("@Before Class", "Run before anything")
-        }
-
-        @AfterClass
-        @JvmStatic
-        fun after_class_method() {
-            Log.e("@After Class", "Run after everything")
-        }
-
+    @Before
+    override fun setUp() {
+        super.setUp()
+        activityRule.launchActivity(null)
     }
+
+    override fun isMockServerEnabled() = false
 
 
     @Test
