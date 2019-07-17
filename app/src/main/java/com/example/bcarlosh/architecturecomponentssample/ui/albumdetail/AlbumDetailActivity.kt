@@ -11,6 +11,7 @@ import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
 import com.bumptech.glide.load.engine.DiskCacheStrategy
 import com.example.bcarlosh.architecturecomponentssample.R
+import com.example.bcarlosh.architecturecomponentssample.data.entity.Image
 import com.example.bcarlosh.architecturecomponentssample.helpers.GlideApp
 import com.google.android.material.snackbar.Snackbar
 import kotlinx.android.synthetic.main.activity_album_detail.*
@@ -32,12 +33,34 @@ class AlbumDetailActivity : AppCompatActivity() {
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
 
         initViewModel()
+        setCollapsingToolbarTitle(viewModel.currentAlbumName)
         initFloatingActionButton()
+        bindUI()
         setOnFloatingActionButtonClickListener()
 
         if (savedInstanceState == null) {
             loadFragment(AlbumDetailFragment())
         }
+    }
+
+    private fun bindUI() {
+        viewModel.albumInfoResponse.observe(this, Observer {
+            if (it == null) return@Observer
+
+            if (it.album == null || it.album.tracks.track.isEmpty()) {
+                setErrorView()
+            } else {
+                setAlbumImage(getImageUrl(it.album.image))
+                showStoreAlbumFab()
+            }
+        })
+
+        viewModel.error.observe(this, Observer {
+            if (it == null) return@Observer
+
+            setErrorView()
+        })
+
     }
 
     private fun initViewModel() {
@@ -146,36 +169,50 @@ class AlbumDetailActivity : AppCompatActivity() {
     }
     //endregion
 
-    //region External calling methods
-    fun setCollapsingToolbarTitle(text: String) {
+    private fun setCollapsingToolbarTitle(text: String) {
         collapsing_toolbar.title = text
     }
 
-    fun setAlbumImage(imageUrl: String) {
+    private fun getImageUrl(imageList: List<Image>): String {
+        return when {
+            imageList.size >= 4 -> imageList[3].text
+            imageList.size == 3 -> imageList[2].text
+            imageList.size == 2 -> imageList[1].text
+            imageList.size == 1 -> imageList[0].text
+            else -> ""
+        }
+    }
+
+    private fun setAlbumImage(imageUrl: String) {
         GlideApp.with(this)
             .load(imageUrl)
             .diskCacheStrategy(DiskCacheStrategy.ALL)
             .into(image)
     }
 
-    fun showStoreAlbumFab() {
+    private fun setErrorView() {
+        hideStoreAlbumFab()
+        setErrorAlbumImage()
+        setAppBarExpanded(false)
+    }
+
+    private fun showStoreAlbumFab() {
         store_delete_album_fab.show()
     }
 
-    fun hideStoreAlbumFab() {
+    private fun hideStoreAlbumFab() {
         store_delete_album_fab.hide()
     }
 
-    fun setAppBarExpanded(boolean: Boolean) {
+    private fun setAppBarExpanded(boolean: Boolean) {
         app_bar_layout.setExpanded(boolean)
     }
 
-    fun setErrorAlbumImage() {
+    private fun setErrorAlbumImage() {
         collapsing_toolbar.scrimAnimationDuration = 100
         image.scaleType = ImageView.ScaleType.CENTER_INSIDE
         image.setImageDrawable(getDrawable(R.drawable.ic_sentiment_dissatisfied_64dp))
     }
-    //endregion
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         when (item.itemId) {

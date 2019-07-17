@@ -8,7 +8,6 @@ import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.bcarlosh.architecturecomponentssample.R
-import com.example.bcarlosh.architecturecomponentssample.data.entity.Image
 import com.example.bcarlosh.architecturecomponentssample.data.entity.track.Track
 import kotlinx.android.synthetic.main.album_detail_fragment.*
 import kotlinx.android.synthetic.main.error_view.*
@@ -33,13 +32,8 @@ class AlbumDetailFragment : Fragment() {
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
 
-        updateSupportActionBarTitle(viewModel.currentAlbumName)
         initRecyclerView()
         bindUI()
-    }
-
-    private fun updateSupportActionBarTitle(text: String) {
-        (activity as? AlbumDetailActivity)?.setCollapsingToolbarTitle(text)
     }
 
     private fun bindUI() {
@@ -51,8 +45,6 @@ class AlbumDetailFragment : Fragment() {
             if (it.album == null || it.album.tracks.track.isEmpty()) {
                 setErrorView(getString(R.string.no_album_detail_found))
             } else {
-                setAlbumImage(getImageUrl(it.album.image))
-                (activity as? AlbumDetailActivity)?.showStoreAlbumFab()
                 tracksList.clear()
                 tracksList.addAll(it.album.tracks.track)
                 updateRecyclerView()
@@ -83,29 +75,9 @@ class AlbumDetailFragment : Fragment() {
         hideLoading()
     }
 
-    private fun setAlbumImage(imageUrl: String) {
-        (activity as? AlbumDetailActivity)?.setAlbumImage(imageUrl)
-    }
-
-    private fun getImageUrl(imageList: List<Image>): String {
-        return when {
-            imageList.size >= 4 -> imageList[3].text
-            imageList.size == 3 -> imageList[2].text
-            imageList.size == 2 -> imageList[1].text
-            imageList.size == 1 -> imageList[0].text
-            else -> ""
-        }
-    }
-
     private fun setErrorView(errorMsg: String) {
         album_detail_tracks_recycler_view.visibility = View.INVISIBLE
         hideLoading()
-
-        (activity as? AlbumDetailActivity)?.apply {
-            hideStoreAlbumFab()
-            setErrorAlbumImage()
-            setAppBarExpanded(false)
-        }
 
         album_detail_error_view.visibility = View.VISIBLE
         error_view_textView.text = errorMsg

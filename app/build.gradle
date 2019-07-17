@@ -31,7 +31,8 @@ android {
 
     sourceSets {
         main {
-            assets.srcDirs = ['src/main/assets', 'src/test/assets/', 'src/androidTest/assets/']
+            assets.srcDirs = ['src/main/assets', 'src/androidTest/assets/']
+            resources.srcDirs = ['src/main/resources', 'src/test/resources/']
         }
         test {
             java.srcDirs += 'src/sharedTest/java'
@@ -39,6 +40,10 @@ android {
         androidTest {
             java.srcDirs += 'src/sharedTest/java'
         }
+    }
+
+    testOptions {
+        unitTests.returnDefaultValues = true
     }
 
 }
