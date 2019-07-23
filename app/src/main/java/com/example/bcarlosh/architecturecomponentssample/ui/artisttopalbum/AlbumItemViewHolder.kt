@@ -3,7 +3,6 @@ package com.example.bcarlosh.architecturecomponentssample.ui.artisttopalbum
 import android.view.View
 import androidx.recyclerview.widget.RecyclerView
 import com.example.bcarlosh.architecturecomponentssample.R
-import com.example.bcarlosh.architecturecomponentssample.data.entity.Image
 import com.example.bcarlosh.architecturecomponentssample.data.entity.album.Album
 import com.example.bcarlosh.architecturecomponentssample.helpers.GlideApp
 import kotlinx.android.synthetic.main.item_album.view.*
@@ -18,7 +17,7 @@ class AlbumItemViewHolder(
 
     fun bind(album: Album) {
 
-        setImage(getImageUrl(album.image))
+        setImage(album.image)
         setAlbumTitle(album.name)
         setPlayCount(album.playcount)
 
@@ -43,15 +42,6 @@ class AlbumItemViewHolder(
             .load(imageUrl)
             .placeholder(R.drawable.ic_album_48dp)
             .into(itemView.item_album_imageView)
-    }
-
-    private fun getImageUrl(imageList: List<Image>): String {
-        return when {
-            imageList.size >= 3 -> imageList[2].text
-            imageList.size == 2 -> imageList[1].text
-            imageList.size == 1 -> imageList[0].text
-            else -> ""
-        }
     }
 
 }

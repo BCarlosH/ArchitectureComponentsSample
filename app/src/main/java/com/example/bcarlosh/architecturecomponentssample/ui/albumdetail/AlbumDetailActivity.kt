@@ -11,7 +11,6 @@ import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
 import com.bumptech.glide.load.engine.DiskCacheStrategy
 import com.example.bcarlosh.architecturecomponentssample.R
-import com.example.bcarlosh.architecturecomponentssample.data.entity.Image
 import com.example.bcarlosh.architecturecomponentssample.helpers.GlideApp
 import com.google.android.material.snackbar.Snackbar
 import kotlinx.android.synthetic.main.activity_album_detail.*
@@ -50,7 +49,7 @@ class AlbumDetailActivity : AppCompatActivity() {
             if (it.album == null || it.album.tracks.track.isEmpty()) {
                 setErrorView()
             } else {
-                setAlbumImage(getImageUrl(it.album.image))
+                setAlbumImage(it.album.image)
                 showStoreAlbumFab()
             }
         })
@@ -171,16 +170,6 @@ class AlbumDetailActivity : AppCompatActivity() {
 
     private fun setCollapsingToolbarTitle(text: String) {
         collapsing_toolbar.title = text
-    }
-
-    private fun getImageUrl(imageList: List<Image>): String {
-        return when {
-            imageList.size >= 4 -> imageList[3].text
-            imageList.size == 3 -> imageList[2].text
-            imageList.size == 2 -> imageList[1].text
-            imageList.size == 1 -> imageList[0].text
-            else -> ""
-        }
     }
 
     private fun setAlbumImage(imageUrl: String) {
