@@ -1,0 +1,1431 @@
+{
+  "topalbums": {
+    "album": [
+      {
+        "name": "Senderos De Traición",
+        "playcount": 1068013,
+        "mbid": "ccf687e1-d013-426b-b5d3-aa3c50a93929",
+        "url": "https://www.last.fm/music/H%C3%A9roes+del+Silencio/Senderos+De+Traici%C3%B3n",
+        "artist": {
+          "name": "Héroes del Silencio",
+          "mbid": "4bb712d6-8be9-4c09-810a-eb3bed2be345",
+          "url": "https://www.last.fm/music/H%C3%A9roes+del+Silencio"
+        },
+        "image": [
+          {
+            "#text": "https://lastfm-img2.akamaized.net/i/u/34s/f5f80c8d6aee45da83bcfc3d8b8477b1.png",
+            "size": "small"
+          },
+          {
+            "#text": "https://lastfm-img2.akamaized.net/i/u/64s/f5f80c8d6aee45da83bcfc3d8b8477b1.png",
+            "size": "medium"
+          },
+          {
+            "#text": "https://lastfm-img2.akamaized.net/i/u/174s/f5f80c8d6aee45da83bcfc3d8b8477b1.png",
+            "size": "large"
+          },
+          {
+            "#text": "https://lastfm-img2.akamaized.net/i/u/300x300/f5f80c8d6aee45da83bcfc3d8b8477b1.png",
+            "size": "extralarge"
+          }
+        ]
+      },
+      {
+        "name": "El Espíritu Del Vino",
+        "playcount": 704152,
+        "mbid": "bb173e25-dd51-4604-ad61-729b98c6ec2a",
+        "url": "https://www.last.fm/music/H%C3%A9roes+del+Silencio/El+Esp%C3%ADritu+Del+Vino",
+        "artist": {
+          "name": "Héroes del Silencio",
+          "mbid": "4bb712d6-8be9-4c09-810a-eb3bed2be345",
+          "url": "https://www.last.fm/music/H%C3%A9roes+del+Silencio"
+        },
+        "image": [
+          {
+            "#text": "https://lastfm-img2.akamaized.net/i/u/34s/9828888782184596c55eae329d2083ce.png",
+            "size": "small"
+          },
+          {
+            "#text": "https://lastfm-img2.akamaized.net/i/u/64s/9828888782184596c55eae329d2083ce.png",
+            "size": "medium"
+          },
+          {
+            "#text": "https://lastfm-img2.akamaized.net/i/u/174s/9828888782184596c55eae329d2083ce.png",
+            "size": "large"
+          },
+          {
+            "#text": "https://lastfm-img2.akamaized.net/i/u/300x300/9828888782184596c55eae329d2083ce.png",
+            "size": "extralarge"
+          }
+        ]
+      },
+      {
+        "name": "Avalancha",
+        "playcount": 612477,
+        "mbid": "c44bb12f-d076-3d12-ba4c-61d3e1a55143",
+        "url": "https://www.last.fm/music/H%C3%A9roes+del+Silencio/Avalancha",
+        "artist": {
+          "name": "Héroes del Silencio",
+          "mbid": "4bb712d6-8be9-4c09-810a-eb3bed2be345",
+          "url": "https://www.last.fm/music/H%C3%A9roes+del+Silencio"
+        },
+        "image": [
+          {
+            "#text": "https://lastfm-img2.akamaized.net/i/u/34s/5971301b88fd404db2368d32f3144ae1.png",
+            "size": "small"
+          },
+          {
+            "#text": "https://lastfm-img2.akamaized.net/i/u/64s/5971301b88fd404db2368d32f3144ae1.png",
+            "size": "medium"
+          },
+          {
+            "#text": "https://lastfm-img2.akamaized.net/i/u/174s/5971301b88fd404db2368d32f3144ae1.png",
+            "size": "large"
+          },
+          {
+            "#text": "https://lastfm-img2.akamaized.net/i/u/300x300/5971301b88fd404db2368d32f3144ae1.png",
+            "size": "extralarge"
+          }
+        ]
+      },
+      {
+        "name": "El Mar No Cesa",
+        "playcount": 505692,
+        "mbid": "4fad0d44-9420-35fd-967b-d96a5b01dcfa",
+        "url": "https://www.last.fm/music/H%C3%A9roes+del+Silencio/El+Mar+No+Cesa",
+        "artist": {
+          "name": "Héroes del Silencio",
+          "mbid": "4bb712d6-8be9-4c09-810a-eb3bed2be345",
+          "url": "https://www.last.fm/music/H%C3%A9roes+del+Silencio"
+        },
+        "image": [
+          {
+            "#text": "https://lastfm-img2.akamaized.net/i/u/34s/fdc1ee5f92e0959d43e6e0de1ea3d496.png",
+            "size": "small"
+          },
+          {
+            "#text": "https://lastfm-img2.akamaized.net/i/u/64s/fdc1ee5f92e0959d43e6e0de1ea3d496.png",
+            "size": "medium"
+          },
+          {
+            "#text": "https://lastfm-img2.akamaized.net/i/u/174s/fdc1ee5f92e0959d43e6e0de1ea3d496.png",
+            "size": "large"
+          },
+          {
+            "#text": "https://lastfm-img2.akamaized.net/i/u/300x300/fdc1ee5f92e0959d43e6e0de1ea3d496.png",
+            "size": "extralarge"
+          }
+        ]
+      },
+      {
+        "name": "Canciones 1984-1996 (Disc 2)",
+        "playcount": 105570,
+        "url": "https://www.last.fm/music/H%C3%A9roes+del+Silencio/Canciones+1984-1996+(Disc+2)",
+        "artist": {
+          "name": "Héroes del Silencio",
+          "mbid": "4bb712d6-8be9-4c09-810a-eb3bed2be345",
+          "url": "https://www.last.fm/music/H%C3%A9roes+del+Silencio"
+        },
+        "image": [
+          {
+            "#text": "https://lastfm-img2.akamaized.net/i/u/34s/1276f9f633604f27bc9f6f6b2d9951ab.png",
+            "size": "small"
+          },
+          {
+            "#text": "https://lastfm-img2.akamaized.net/i/u/64s/1276f9f633604f27bc9f6f6b2d9951ab.png",
+            "size": "medium"
+          },
+          {
+            "#text": "https://lastfm-img2.akamaized.net/i/u/174s/1276f9f633604f27bc9f6f6b2d9951ab.png",
+            "size": "large"
+          },
+          {
+            "#text": "https://lastfm-img2.akamaized.net/i/u/300x300/1276f9f633604f27bc9f6f6b2d9951ab.png",
+            "size": "extralarge"
+          }
+        ]
+      },
+      {
+        "name": "Rarezas",
+        "playcount": 244246,
+        "mbid": "c34e52cd-5edb-48f6-b5fd-198eb64bc2a5",
+        "url": "https://www.last.fm/music/H%C3%A9roes+del+Silencio/Rarezas",
+        "artist": {
+          "name": "Héroes del Silencio",
+          "mbid": "4bb712d6-8be9-4c09-810a-eb3bed2be345",
+          "url": "https://www.last.fm/music/H%C3%A9roes+del+Silencio"
+        },
+        "image": [
+          {
+            "#text": "https://lastfm-img2.akamaized.net/i/u/34s/dd5e1bbd33dc48b685ec4fa4b2c5d84e.png",
+            "size": "small"
+          },
+          {
+            "#text": "https://lastfm-img2.akamaized.net/i/u/64s/dd5e1bbd33dc48b685ec4fa4b2c5d84e.png",
+            "size": "medium"
+          },
+          {
+            "#text": "https://lastfm-img2.akamaized.net/i/u/174s/dd5e1bbd33dc48b685ec4fa4b2c5d84e.png",
+            "size": "large"
+          },
+          {
+            "#text": "https://lastfm-img2.akamaized.net/i/u/300x300/dd5e1bbd33dc48b685ec4fa4b2c5d84e.png",
+            "size": "extralarge"
+          }
+        ]
+      },
+      {
+        "name": "Canciones 1984-1996: The Best Of (Disc 1)",
+        "playcount": 55577,
+        "url": "https://www.last.fm/music/H%C3%A9roes+del+Silencio/Canciones+1984-1996:+The+Best+Of+(Disc+1)",
+        "artist": {
+          "name": "Héroes del Silencio",
+          "mbid": "4bb712d6-8be9-4c09-810a-eb3bed2be345",
+          "url": "https://www.last.fm/music/H%C3%A9roes+del+Silencio"
+        },
+        "image": [
+          {
+            "#text": "https://lastfm-img2.akamaized.net/i/u/34s/d83fc99f955b4ac29d1a98a337697400.png",
+            "size": "small"
+          },
+          {
+            "#text": "https://lastfm-img2.akamaized.net/i/u/64s/d83fc99f955b4ac29d1a98a337697400.png",
+            "size": "medium"
+          },
+          {
+            "#text": "https://lastfm-img2.akamaized.net/i/u/174s/d83fc99f955b4ac29d1a98a337697400.png",
+            "size": "large"
+          },
+          {
+            "#text": "https://lastfm-img2.akamaized.net/i/u/300x300/d83fc99f955b4ac29d1a98a337697400.png",
+            "size": "extralarge"
+          }
+        ]
+      },
+      {
+        "name": "The Platinum Collection",
+        "playcount": 305743,
+        "mbid": "bfad9cd1-dcf0-4691-bef6-b993be6d59e9",
+        "url": "https://www.last.fm/music/H%C3%A9roes+del+Silencio/The+Platinum+Collection",
+        "artist": {
+          "name": "Héroes del Silencio",
+          "mbid": "4bb712d6-8be9-4c09-810a-eb3bed2be345",
+          "url": "https://www.last.fm/music/H%C3%A9roes+del+Silencio"
+        },
+        "image": [
+          {
+            "#text": "https://lastfm-img2.akamaized.net/i/u/34s/27d56cce338b4ef0bc395948f289bbeb.png",
+            "size": "small"
+          },
+          {
+            "#text": "https://lastfm-img2.akamaized.net/i/u/64s/27d56cce338b4ef0bc395948f289bbeb.png",
+            "size": "medium"
+          },
+          {
+            "#text": "https://lastfm-img2.akamaized.net/i/u/174s/27d56cce338b4ef0bc395948f289bbeb.png",
+            "size": "large"
+          },
+          {
+            "#text": "https://lastfm-img2.akamaized.net/i/u/300x300/27d56cce338b4ef0bc395948f289bbeb.png",
+            "size": "extralarge"
+          }
+        ]
+      },
+      {
+        "name": "Senderos De Traición - Edición Especial",
+        "playcount": 72767,
+        "url": "https://www.last.fm/music/H%C3%A9roes+del+Silencio/Senderos+De+Traici%C3%B3n+-+Edici%C3%B3n+Especial",
+        "artist": {
+          "name": "Héroes del Silencio",
+          "mbid": "4bb712d6-8be9-4c09-810a-eb3bed2be345",
+          "url": "https://www.last.fm/music/H%C3%A9roes+del+Silencio"
+        },
+        "image": [
+          {
+            "#text": "https://lastfm-img2.akamaized.net/i/u/34s/09f7232a7a110fa6378c3a663ec82fb4.png",
+            "size": "small"
+          },
+          {
+            "#text": "https://lastfm-img2.akamaized.net/i/u/64s/09f7232a7a110fa6378c3a663ec82fb4.png",
+            "size": "medium"
+          },
+          {
+            "#text": "https://lastfm-img2.akamaized.net/i/u/174s/09f7232a7a110fa6378c3a663ec82fb4.png",
+            "size": "large"
+          },
+          {
+            "#text": "https://lastfm-img2.akamaized.net/i/u/300x300/09f7232a7a110fa6378c3a663ec82fb4.png",
+            "size": "extralarge"
+          }
+        ]
+      },
+      {
+        "name": "Parasiempre",
+        "playcount": 193734,
+        "url": "https://www.last.fm/music/H%C3%A9roes+del+Silencio/Parasiempre",
+        "artist": {
+          "name": "Héroes del Silencio",
+          "mbid": "4bb712d6-8be9-4c09-810a-eb3bed2be345",
+          "url": "https://www.last.fm/music/H%C3%A9roes+del+Silencio"
+        },
+        "image": [
+          {
+            "#text": "https://lastfm-img2.akamaized.net/i/u/34s/0ee488abe0d74fc8a49e3a72f6df8df0.png",
+            "size": "small"
+          },
+          {
+            "#text": "https://lastfm-img2.akamaized.net/i/u/64s/0ee488abe0d74fc8a49e3a72f6df8df0.png",
+            "size": "medium"
+          },
+          {
+            "#text": "https://lastfm-img2.akamaized.net/i/u/174s/0ee488abe0d74fc8a49e3a72f6df8df0.png",
+            "size": "large"
+          },
+          {
+            "#text": "https://lastfm-img2.akamaized.net/i/u/300x300/0ee488abe0d74fc8a49e3a72f6df8df0.png",
+            "size": "extralarge"
+          }
+        ]
+      },
+      {
+        "name": "Tour 2007",
+        "playcount": 362204,
+        "mbid": "5cd4184d-d20a-4da2-89f8-dda758f7c1e3",
+        "url": "https://www.last.fm/music/H%C3%A9roes+del+Silencio/Tour+2007",
+        "artist": {
+          "name": "Héroes del Silencio",
+          "mbid": "4bb712d6-8be9-4c09-810a-eb3bed2be345",
+          "url": "https://www.last.fm/music/H%C3%A9roes+del+Silencio"
+        },
+        "image": [
+          {
+            "#text": "https://lastfm-img2.akamaized.net/i/u/34s/e610b85fc00c90f3fa27b667e6ff9a13.png",
+            "size": "small"
+          },
+          {
+            "#text": "https://lastfm-img2.akamaized.net/i/u/64s/e610b85fc00c90f3fa27b667e6ff9a13.png",
+            "size": "medium"
+          },
+          {
+            "#text": "https://lastfm-img2.akamaized.net/i/u/174s/e610b85fc00c90f3fa27b667e6ff9a13.png",
+            "size": "large"
+          },
+          {
+            "#text": "https://lastfm-img2.akamaized.net/i/u/300x300/e610b85fc00c90f3fa27b667e6ff9a13.png",
+            "size": "extralarge"
+          }
+        ]
+      },
+      {
+        "name": "Antología Audiovisual",
+        "playcount": 102462,
+        "mbid": "34d2258c-44aa-4180-b909-18877ab82bfb",
+        "url": "https://www.last.fm/music/H%C3%A9roes+del+Silencio/Antolog%C3%ADa+Audiovisual",
+        "artist": {
+          "name": "Héroes del Silencio",
+          "mbid": "4bb712d6-8be9-4c09-810a-eb3bed2be345",
+          "url": "https://www.last.fm/music/H%C3%A9roes+del+Silencio"
+        },
+        "image": [
+          {
+            "#text": "https://lastfm-img2.akamaized.net/i/u/34s/ca5277ee5599b996d7291c06b1ee27fb.png",
+            "size": "small"
+          },
+          {
+            "#text": "https://lastfm-img2.akamaized.net/i/u/64s/ca5277ee5599b996d7291c06b1ee27fb.png",
+            "size": "medium"
+          },
+          {
+            "#text": "https://lastfm-img2.akamaized.net/i/u/174s/ca5277ee5599b996d7291c06b1ee27fb.png",
+            "size": "large"
+          },
+          {
+            "#text": "https://lastfm-img2.akamaized.net/i/u/300x300/ca5277ee5599b996d7291c06b1ee27fb.png",
+            "size": "extralarge"
+          }
+        ]
+      },
+      {
+        "name": "Antologia Audiovisual",
+        "playcount": 95072,
+        "url": "https://www.last.fm/music/H%C3%A9roes+del+Silencio/Antologia+Audiovisual",
+        "artist": {
+          "name": "Héroes del Silencio",
+          "mbid": "4bb712d6-8be9-4c09-810a-eb3bed2be345",
+          "url": "https://www.last.fm/music/H%C3%A9roes+del+Silencio"
+        },
+        "image": [
+          {
+            "#text": "https://lastfm-img2.akamaized.net/i/u/34s/c569ae60d1058bfb1a5dc9138ecb6fc7.png",
+            "size": "small"
+          },
+          {
+            "#text": "https://lastfm-img2.akamaized.net/i/u/64s/c569ae60d1058bfb1a5dc9138ecb6fc7.png",
+            "size": "medium"
+          },
+          {
+            "#text": "https://lastfm-img2.akamaized.net/i/u/174s/c569ae60d1058bfb1a5dc9138ecb6fc7.png",
+            "size": "large"
+          },
+          {
+            "#text": "https://lastfm-img2.akamaized.net/i/u/300x300/c569ae60d1058bfb1a5dc9138ecb6fc7.png",
+            "size": "extralarge"
+          }
+        ]
+      },
+      {
+        "name": "El Mar No Cesa- Edición Especial",
+        "playcount": 32737,
+        "url": "https://www.last.fm/music/H%C3%A9roes+del+Silencio/El+Mar+No+Cesa-+Edici%C3%B3n+Especial",
+        "artist": {
+          "name": "Héroes del Silencio",
+          "mbid": "4bb712d6-8be9-4c09-810a-eb3bed2be345",
+          "url": "https://www.last.fm/music/H%C3%A9roes+del+Silencio"
+        },
+        "image": [
+          {
+            "#text": "https://lastfm-img2.akamaized.net/i/u/34s/f7dfafa3590344f79daf131cb6b45fc7.png",
+            "size": "small"
+          },
+          {
+            "#text": "https://lastfm-img2.akamaized.net/i/u/64s/f7dfafa3590344f79daf131cb6b45fc7.png",
+            "size": "medium"
+          },
+          {
+            "#text": "https://lastfm-img2.akamaized.net/i/u/174s/f7dfafa3590344f79daf131cb6b45fc7.png",
+            "size": "large"
+          },
+          {
+            "#text": "https://lastfm-img2.akamaized.net/i/u/300x300/f7dfafa3590344f79daf131cb6b45fc7.png",
+            "size": "extralarge"
+          }
+        ]
+      },
+      {
+        "name": "Avalancha- Edición Especial",
+        "playcount": 37829,
+        "url": "https://www.last.fm/music/H%C3%A9roes+del+Silencio/Avalancha-+Edici%C3%B3n+Especial",
+        "artist": {
+          "name": "Héroes del Silencio",
+          "mbid": "4bb712d6-8be9-4c09-810a-eb3bed2be345",
+          "url": "https://www.last.fm/music/H%C3%A9roes+del+Silencio"
+        },
+        "image": [
+          {
+            "#text": "",
+            "size": "small"
+          },
+          {
+            "#text": "",
+            "size": "medium"
+          },
+          {
+            "#text": "",
+            "size": "large"
+          },
+          {
+            "#text": "",
+            "size": "extralarge"
+          }
+        ]
+      },
+      {
+        "name": "El  Espíritu Del Vino- Edición Especial",
+        "playcount": 26271,
+        "url": "https://www.last.fm/music/H%C3%A9roes+del+Silencio/El++Esp%C3%ADritu+Del+Vino-+Edici%C3%B3n+Especial",
+        "artist": {
+          "name": "Héroes del Silencio",
+          "mbid": "4bb712d6-8be9-4c09-810a-eb3bed2be345",
+          "url": "https://www.last.fm/music/H%C3%A9roes+del+Silencio"
+        },
+        "image": [
+          {
+            "#text": "https://lastfm-img2.akamaized.net/i/u/34s/399d1c22e03fea8dbb777680506fee54.png",
+            "size": "small"
+          },
+          {
+            "#text": "https://lastfm-img2.akamaized.net/i/u/64s/399d1c22e03fea8dbb777680506fee54.png",
+            "size": "medium"
+          },
+          {
+            "#text": "https://lastfm-img2.akamaized.net/i/u/174s/399d1c22e03fea8dbb777680506fee54.png",
+            "size": "large"
+          },
+          {
+            "#text": "https://lastfm-img2.akamaized.net/i/u/300x300/399d1c22e03fea8dbb777680506fee54.png",
+            "size": "extralarge"
+          }
+        ]
+      },
+      {
+        "name": "Senda '91",
+        "playcount": 58825,
+        "mbid": "c00c5389-cb83-4317-af5c-0724ffc10425",
+        "url": "https://www.last.fm/music/H%C3%A9roes+del+Silencio/Senda+%2791",
+        "artist": {
+          "name": "Héroes del Silencio",
+          "mbid": "4bb712d6-8be9-4c09-810a-eb3bed2be345",
+          "url": "https://www.last.fm/music/H%C3%A9roes+del+Silencio"
+        },
+        "image": [
+          {
+            "#text": "https://lastfm-img2.akamaized.net/i/u/34s/d9f2c7d711fd98cac85f3491dacc979e.png",
+            "size": "small"
+          },
+          {
+            "#text": "https://lastfm-img2.akamaized.net/i/u/64s/d9f2c7d711fd98cac85f3491dacc979e.png",
+            "size": "medium"
+          },
+          {
+            "#text": "https://lastfm-img2.akamaized.net/i/u/174s/d9f2c7d711fd98cac85f3491dacc979e.png",
+            "size": "large"
+          },
+          {
+            "#text": "https://lastfm-img2.akamaized.net/i/u/300x300/d9f2c7d711fd98cac85f3491dacc979e.png",
+            "size": "extralarge"
+          }
+        ]
+      },
+      {
+        "name": "40 Exitos",
+        "playcount": 112101,
+        "url": "https://www.last.fm/music/H%C3%A9roes+del+Silencio/40+Exitos",
+        "artist": {
+          "name": "Héroes del Silencio",
+          "mbid": "4bb712d6-8be9-4c09-810a-eb3bed2be345",
+          "url": "https://www.last.fm/music/H%C3%A9roes+del+Silencio"
+        },
+        "image": [
+          {
+            "#text": "https://lastfm-img2.akamaized.net/i/u/34s/2d2724f3b59440ada874547c42e3ff5a.png",
+            "size": "small"
+          },
+          {
+            "#text": "https://lastfm-img2.akamaized.net/i/u/64s/2d2724f3b59440ada874547c42e3ff5a.png",
+            "size": "medium"
+          },
+          {
+            "#text": "https://lastfm-img2.akamaized.net/i/u/174s/2d2724f3b59440ada874547c42e3ff5a.png",
+            "size": "large"
+          },
+          {
+            "#text": "https://lastfm-img2.akamaized.net/i/u/300x300/2d2724f3b59440ada874547c42e3ff5a.png",
+            "size": "extralarge"
+          }
+        ]
+      },
+      {
+        "name": "El Espíritu del Vino-20th Anniversary Edition",
+        "playcount": 32881,
+        "url": "https://www.last.fm/music/H%C3%A9roes+del+Silencio/El+Esp%C3%ADritu+del+Vino-20th+Anniversary+Edition",
+        "artist": {
+          "name": "Héroes del Silencio",
+          "mbid": "4bb712d6-8be9-4c09-810a-eb3bed2be345",
+          "url": "https://www.last.fm/music/H%C3%A9roes+del+Silencio"
+        },
+        "image": [
+          {
+            "#text": "https://lastfm-img2.akamaized.net/i/u/34s/bc82204b48c843a5b9b7ff868cc3b272.png",
+            "size": "small"
+          },
+          {
+            "#text": "https://lastfm-img2.akamaized.net/i/u/64s/bc82204b48c843a5b9b7ff868cc3b272.png",
+            "size": "medium"
+          },
+          {
+            "#text": "https://lastfm-img2.akamaized.net/i/u/174s/bc82204b48c843a5b9b7ff868cc3b272.png",
+            "size": "large"
+          },
+          {
+            "#text": "https://lastfm-img2.akamaized.net/i/u/300x300/bc82204b48c843a5b9b7ff868cc3b272.png",
+            "size": "extralarge"
+          }
+        ]
+      },
+      {
+        "name": "El Ruido Y La Furia",
+        "playcount": 32901,
+        "mbid": "bf4c474c-e8a2-4d8c-a1e5-63d09ab940ca",
+        "url": "https://www.last.fm/music/H%C3%A9roes+del+Silencio/El+Ruido+Y+La+Furia",
+        "artist": {
+          "name": "Héroes del Silencio",
+          "mbid": "4bb712d6-8be9-4c09-810a-eb3bed2be345",
+          "url": "https://www.last.fm/music/H%C3%A9roes+del+Silencio"
+        },
+        "image": [
+          {
+            "#text": "https://lastfm-img2.akamaized.net/i/u/34s/77c91d98f482448f8ed9f4d352d4d8fb.png",
+            "size": "small"
+          },
+          {
+            "#text": "https://lastfm-img2.akamaized.net/i/u/64s/77c91d98f482448f8ed9f4d352d4d8fb.png",
+            "size": "medium"
+          },
+          {
+            "#text": "https://lastfm-img2.akamaized.net/i/u/174s/77c91d98f482448f8ed9f4d352d4d8fb.png",
+            "size": "large"
+          },
+          {
+            "#text": "https://lastfm-img2.akamaized.net/i/u/300x300/77c91d98f482448f8ed9f4d352d4d8fb.png",
+            "size": "extralarge"
+          }
+        ]
+      },
+      {
+        "name": "En Directo",
+        "playcount": 21639,
+        "mbid": "9e25435f-c836-456e-a313-65471aaa0837",
+        "url": "https://www.last.fm/music/H%C3%A9roes+del+Silencio/En+Directo",
+        "artist": {
+          "name": "Héroes del Silencio",
+          "mbid": "4bb712d6-8be9-4c09-810a-eb3bed2be345",
+          "url": "https://www.last.fm/music/H%C3%A9roes+del+Silencio"
+        },
+        "image": [
+          {
+            "#text": "https://lastfm-img2.akamaized.net/i/u/34s/b0bbf00a9ba9acee7468a4595a438400.png",
+            "size": "small"
+          },
+          {
+            "#text": "https://lastfm-img2.akamaized.net/i/u/64s/b0bbf00a9ba9acee7468a4595a438400.png",
+            "size": "medium"
+          },
+          {
+            "#text": "https://lastfm-img2.akamaized.net/i/u/174s/b0bbf00a9ba9acee7468a4595a438400.png",
+            "size": "large"
+          },
+          {
+            "#text": "https://lastfm-img2.akamaized.net/i/u/300x300/b0bbf00a9ba9acee7468a4595a438400.png",
+            "size": "extralarge"
+          }
+        ]
+      },
+      {
+        "name": "Heroes Del Silencio",
+        "playcount": 24074,
+        "url": "https://www.last.fm/music/H%C3%A9roes+del+Silencio/Heroes+Del+Silencio",
+        "artist": {
+          "name": "Héroes del Silencio",
+          "mbid": "4bb712d6-8be9-4c09-810a-eb3bed2be345",
+          "url": "https://www.last.fm/music/H%C3%A9roes+del+Silencio"
+        },
+        "image": [
+          {
+            "#text": "",
+            "size": "small"
+          },
+          {
+            "#text": "",
+            "size": "medium"
+          },
+          {
+            "#text": "",
+            "size": "large"
+          },
+          {
+            "#text": "",
+            "size": "extralarge"
+          }
+        ]
+      },
+      {
+        "name": "Antología",
+        "playcount": 29856,
+        "url": "https://www.last.fm/music/H%C3%A9roes+del+Silencio/Antolog%C3%ADa",
+        "artist": {
+          "name": "Héroes del Silencio",
+          "mbid": "4bb712d6-8be9-4c09-810a-eb3bed2be345",
+          "url": "https://www.last.fm/music/H%C3%A9roes+del+Silencio"
+        },
+        "image": [
+          {
+            "#text": "https://lastfm-img2.akamaized.net/i/u/34s/407f283fbf8846bf9fcd181dbec03a94.png",
+            "size": "small"
+          },
+          {
+            "#text": "https://lastfm-img2.akamaized.net/i/u/64s/407f283fbf8846bf9fcd181dbec03a94.png",
+            "size": "medium"
+          },
+          {
+            "#text": "https://lastfm-img2.akamaized.net/i/u/174s/407f283fbf8846bf9fcd181dbec03a94.png",
+            "size": "large"
+          },
+          {
+            "#text": "https://lastfm-img2.akamaized.net/i/u/300x300/407f283fbf8846bf9fcd181dbec03a94.png",
+            "size": "extralarge"
+          }
+        ]
+      },
+      {
+        "name": "(null)",
+        "playcount": 20655,
+        "url": "https://www.last.fm/music/H%C3%A9roes+del+Silencio/(null)",
+        "artist": {
+          "name": "Héroes del Silencio",
+          "mbid": "4bb712d6-8be9-4c09-810a-eb3bed2be345",
+          "url": "https://www.last.fm/music/H%C3%A9roes+del+Silencio"
+        },
+        "image": [
+          {
+            "#text": "",
+            "size": "small"
+          },
+          {
+            "#text": "",
+            "size": "medium"
+          },
+          {
+            "#text": "",
+            "size": "large"
+          },
+          {
+            "#text": "",
+            "size": "extralarge"
+          }
+        ]
+      },
+      {
+        "name": "Senderos De Tracion",
+        "playcount": 13177,
+        "url": "https://www.last.fm/music/H%C3%A9roes+del+Silencio/Senderos+De+Tracion",
+        "artist": {
+          "name": "Héroes del Silencio",
+          "mbid": "4bb712d6-8be9-4c09-810a-eb3bed2be345",
+          "url": "https://www.last.fm/music/H%C3%A9roes+del+Silencio"
+        },
+        "image": [
+          {
+            "#text": "",
+            "size": "small"
+          },
+          {
+            "#text": "",
+            "size": "medium"
+          },
+          {
+            "#text": "",
+            "size": "large"
+          },
+          {
+            "#text": "",
+            "size": "extralarge"
+          }
+        ]
+      },
+      {
+        "name": "Primeros tiempos",
+        "playcount": 22704,
+        "mbid": "3d6e4877-800e-4e8b-9bad-ddca06ce3bc6",
+        "url": "https://www.last.fm/music/H%C3%A9roes+del+Silencio/Primeros+tiempos",
+        "artist": {
+          "name": "Héroes del Silencio",
+          "mbid": "4bb712d6-8be9-4c09-810a-eb3bed2be345",
+          "url": "https://www.last.fm/music/H%C3%A9roes+del+Silencio"
+        },
+        "image": [
+          {
+            "#text": "https://lastfm-img2.akamaized.net/i/u/34s/46939d80279c445e8f83d4c527666955.png",
+            "size": "small"
+          },
+          {
+            "#text": "https://lastfm-img2.akamaized.net/i/u/64s/46939d80279c445e8f83d4c527666955.png",
+            "size": "medium"
+          },
+          {
+            "#text": "https://lastfm-img2.akamaized.net/i/u/174s/46939d80279c445e8f83d4c527666955.png",
+            "size": "large"
+          },
+          {
+            "#text": "https://lastfm-img2.akamaized.net/i/u/300x300/46939d80279c445e8f83d4c527666955.png",
+            "size": "extralarge"
+          }
+        ]
+      },
+      {
+        "name": "Para Siempre",
+        "playcount": 29887,
+        "mbid": "6724f5b2-c98e-4421-86b8-b7b1fbc9d044",
+        "url": "https://www.last.fm/music/H%C3%A9roes+del+Silencio/Para+Siempre",
+        "artist": {
+          "name": "Héroes del Silencio",
+          "mbid": "4bb712d6-8be9-4c09-810a-eb3bed2be345",
+          "url": "https://www.last.fm/music/H%C3%A9roes+del+Silencio"
+        },
+        "image": [
+          {
+            "#text": "https://lastfm-img2.akamaized.net/i/u/34s/24f373d43987478c8b4f32aa406b8b2a.png",
+            "size": "small"
+          },
+          {
+            "#text": "https://lastfm-img2.akamaized.net/i/u/64s/24f373d43987478c8b4f32aa406b8b2a.png",
+            "size": "medium"
+          },
+          {
+            "#text": "https://lastfm-img2.akamaized.net/i/u/174s/24f373d43987478c8b4f32aa406b8b2a.png",
+            "size": "large"
+          },
+          {
+            "#text": "https://lastfm-img2.akamaized.net/i/u/300x300/24f373d43987478c8b4f32aa406b8b2a.png",
+            "size": "extralarge"
+          }
+        ]
+      },
+      {
+        "name": "Guitar Hero 3",
+        "playcount": 6962,
+        "url": "https://www.last.fm/music/H%C3%A9roes+del+Silencio/Guitar+Hero+3",
+        "artist": {
+          "name": "Héroes del Silencio",
+          "mbid": "4bb712d6-8be9-4c09-810a-eb3bed2be345",
+          "url": "https://www.last.fm/music/H%C3%A9roes+del+Silencio"
+        },
+        "image": [
+          {
+            "#text": "",
+            "size": "small"
+          },
+          {
+            "#text": "",
+            "size": "medium"
+          },
+          {
+            "#text": "",
+            "size": "large"
+          },
+          {
+            "#text": "",
+            "size": "extralarge"
+          }
+        ]
+      },
+      {
+        "name": "Parasiempre (disc 1)",
+        "playcount": 10534,
+        "mbid": "4973bb66-f3f2-42b5-be56-b52388e54e1a",
+        "url": "https://www.last.fm/music/H%C3%A9roes+del+Silencio/Parasiempre+(disc+1)",
+        "artist": {
+          "name": "Héroes del Silencio",
+          "mbid": "4bb712d6-8be9-4c09-810a-eb3bed2be345",
+          "url": "https://www.last.fm/music/H%C3%A9roes+del+Silencio"
+        },
+        "image": [
+          {
+            "#text": "",
+            "size": "small"
+          },
+          {
+            "#text": "",
+            "size": "medium"
+          },
+          {
+            "#text": "",
+            "size": "large"
+          },
+          {
+            "#text": "",
+            "size": "extralarge"
+          }
+        ]
+      },
+      {
+        "name": "The Best Rock Ballads Ever",
+        "playcount": 5580,
+        "url": "https://www.last.fm/music/H%C3%A9roes+del+Silencio/The+Best+Rock+Ballads+Ever",
+        "artist": {
+          "name": "Héroes del Silencio",
+          "mbid": "4bb712d6-8be9-4c09-810a-eb3bed2be345",
+          "url": "https://www.last.fm/music/H%C3%A9roes+del+Silencio"
+        },
+        "image": [
+          {
+            "#text": "",
+            "size": "small"
+          },
+          {
+            "#text": "",
+            "size": "medium"
+          },
+          {
+            "#text": "",
+            "size": "large"
+          },
+          {
+            "#text": "",
+            "size": "extralarge"
+          }
+        ]
+      },
+      {
+        "name": "Para Siempre Disc 2",
+        "playcount": 11085,
+        "url": "https://www.last.fm/music/H%C3%A9roes+del+Silencio/Para+Siempre+Disc+2",
+        "artist": {
+          "name": "Héroes del Silencio",
+          "mbid": "4bb712d6-8be9-4c09-810a-eb3bed2be345",
+          "url": "https://www.last.fm/music/H%C3%A9roes+del+Silencio"
+        },
+        "image": [
+          {
+            "#text": "",
+            "size": "small"
+          },
+          {
+            "#text": "",
+            "size": "medium"
+          },
+          {
+            "#text": "",
+            "size": "large"
+          },
+          {
+            "#text": "",
+            "size": "extralarge"
+          }
+        ]
+      },
+      {
+        "name": "héroes del silencio",
+        "playcount": 10919,
+        "url": "https://www.last.fm/music/H%C3%A9roes+del+Silencio/h%C3%A9roes+del+silencio",
+        "artist": {
+          "name": "Héroes del Silencio",
+          "mbid": "4bb712d6-8be9-4c09-810a-eb3bed2be345",
+          "url": "https://www.last.fm/music/H%C3%A9roes+del+Silencio"
+        },
+        "image": [
+          {
+            "#text": "https://lastfm-img2.akamaized.net/i/u/34s/d346250039ce463cbc0ec8a22aeb413e.png",
+            "size": "small"
+          },
+          {
+            "#text": "https://lastfm-img2.akamaized.net/i/u/64s/d346250039ce463cbc0ec8a22aeb413e.png",
+            "size": "medium"
+          },
+          {
+            "#text": "https://lastfm-img2.akamaized.net/i/u/174s/d346250039ce463cbc0ec8a22aeb413e.png",
+            "size": "large"
+          },
+          {
+            "#text": "https://lastfm-img2.akamaized.net/i/u/300x300/d346250039ce463cbc0ec8a22aeb413e.png",
+            "size": "extralarge"
+          }
+        ]
+      },
+      {
+        "name": "Entre Dos Tierras",
+        "playcount": 13420,
+        "mbid": "52f05b6e-f593-4e62-950d-972b0b9767f8",
+        "url": "https://www.last.fm/music/H%C3%A9roes+del+Silencio/Entre+Dos+Tierras",
+        "artist": {
+          "name": "Héroes del Silencio",
+          "mbid": "4bb712d6-8be9-4c09-810a-eb3bed2be345",
+          "url": "https://www.last.fm/music/H%C3%A9roes+del+Silencio"
+        },
+        "image": [
+          {
+            "#text": "https://lastfm-img2.akamaized.net/i/u/34s/daf5f19c49595a11441ebe5cd3e656a7.png",
+            "size": "small"
+          },
+          {
+            "#text": "https://lastfm-img2.akamaized.net/i/u/64s/daf5f19c49595a11441ebe5cd3e656a7.png",
+            "size": "medium"
+          },
+          {
+            "#text": "https://lastfm-img2.akamaized.net/i/u/174s/daf5f19c49595a11441ebe5cd3e656a7.png",
+            "size": "large"
+          },
+          {
+            "#text": "https://lastfm-img2.akamaized.net/i/u/300x300/daf5f19c49595a11441ebe5cd3e656a7.png",
+            "size": "extralarge"
+          }
+        ]
+      },
+      {
+        "name": "Héroe De Leyenda",
+        "playcount": 7284,
+        "mbid": "b2da96ce-d4a6-4b9a-a2f6-e78bec71644a",
+        "url": "https://www.last.fm/music/H%C3%A9roes+del+Silencio/H%C3%A9roe+De+Leyenda",
+        "artist": {
+          "name": "Héroes del Silencio",
+          "mbid": "4bb712d6-8be9-4c09-810a-eb3bed2be345",
+          "url": "https://www.last.fm/music/H%C3%A9roes+del+Silencio"
+        },
+        "image": [
+          {
+            "#text": "https://lastfm-img2.akamaized.net/i/u/34s/a7fd6d2f7edd43448ace702a5eefd655.png",
+            "size": "small"
+          },
+          {
+            "#text": "https://lastfm-img2.akamaized.net/i/u/64s/a7fd6d2f7edd43448ace702a5eefd655.png",
+            "size": "medium"
+          },
+          {
+            "#text": "https://lastfm-img2.akamaized.net/i/u/174s/a7fd6d2f7edd43448ace702a5eefd655.png",
+            "size": "large"
+          },
+          {
+            "#text": "https://lastfm-img2.akamaized.net/i/u/300x300/a7fd6d2f7edd43448ace702a5eefd655.png",
+            "size": "extralarge"
+          }
+        ]
+      },
+      {
+        "name": "Canciones 1984-1996: Best of Heroes del Silencio Disc 1",
+        "playcount": 17725,
+        "url": "https://www.last.fm/music/H%C3%A9roes+del+Silencio/Canciones+1984-1996:+Best+of+Heroes+del+Silencio+Disc+1",
+        "artist": {
+          "name": "Héroes del Silencio",
+          "mbid": "4bb712d6-8be9-4c09-810a-eb3bed2be345",
+          "url": "https://www.last.fm/music/H%C3%A9roes+del+Silencio"
+        },
+        "image": [
+          {
+            "#text": "",
+            "size": "small"
+          },
+          {
+            "#text": "",
+            "size": "medium"
+          },
+          {
+            "#text": "",
+            "size": "large"
+          },
+          {
+            "#text": "",
+            "size": "extralarge"
+          }
+        ]
+      },
+      {
+        "name": "El Espíritu Del Vino- Edición Especial",
+        "playcount": 10103,
+        "url": "https://www.last.fm/music/H%C3%A9roes+del+Silencio/El+Esp%C3%ADritu+Del+Vino-+Edici%C3%B3n+Especial",
+        "artist": {
+          "name": "Héroes del Silencio",
+          "mbid": "4bb712d6-8be9-4c09-810a-eb3bed2be345",
+          "url": "https://www.last.fm/music/H%C3%A9roes+del+Silencio"
+        },
+        "image": [
+          {
+            "#text": "https://lastfm-img2.akamaized.net/i/u/34s/5530e55adc8f6cbdf22ec3f40e9bfa42.png",
+            "size": "small"
+          },
+          {
+            "#text": "https://lastfm-img2.akamaized.net/i/u/64s/5530e55adc8f6cbdf22ec3f40e9bfa42.png",
+            "size": "medium"
+          },
+          {
+            "#text": "https://lastfm-img2.akamaized.net/i/u/174s/5530e55adc8f6cbdf22ec3f40e9bfa42.png",
+            "size": "large"
+          },
+          {
+            "#text": "https://lastfm-img2.akamaized.net/i/u/300x300/5530e55adc8f6cbdf22ec3f40e9bfa42.png",
+            "size": "extralarge"
+          }
+        ]
+      },
+      {
+        "name": "Canciones 84-96",
+        "playcount": 22092,
+        "url": "https://www.last.fm/music/H%C3%A9roes+del+Silencio/Canciones+84-96",
+        "artist": {
+          "name": "Héroes del Silencio",
+          "mbid": "4bb712d6-8be9-4c09-810a-eb3bed2be345",
+          "url": "https://www.last.fm/music/H%C3%A9roes+del+Silencio"
+        },
+        "image": [
+          {
+            "#text": "https://lastfm-img2.akamaized.net/i/u/34s/e9d6ff25ab35e80071cfb5acf793be18.png",
+            "size": "small"
+          },
+          {
+            "#text": "https://lastfm-img2.akamaized.net/i/u/64s/e9d6ff25ab35e80071cfb5acf793be18.png",
+            "size": "medium"
+          },
+          {
+            "#text": "https://lastfm-img2.akamaized.net/i/u/174s/e9d6ff25ab35e80071cfb5acf793be18.png",
+            "size": "large"
+          },
+          {
+            "#text": "https://lastfm-img2.akamaized.net/i/u/300x300/e9d6ff25ab35e80071cfb5acf793be18.png",
+            "size": "extralarge"
+          }
+        ]
+      },
+      {
+        "name": "Álbum",
+        "playcount": 5321,
+        "url": "https://www.last.fm/music/H%C3%A9roes+del+Silencio/%C3%81lbum",
+        "artist": {
+          "name": "Héroes del Silencio",
+          "mbid": "4bb712d6-8be9-4c09-810a-eb3bed2be345",
+          "url": "https://www.last.fm/music/H%C3%A9roes+del+Silencio"
+        },
+        "image": [
+          {
+            "#text": "",
+            "size": "small"
+          },
+          {
+            "#text": "",
+            "size": "medium"
+          },
+          {
+            "#text": "",
+            "size": "large"
+          },
+          {
+            "#text": "",
+            "size": "extralarge"
+          }
+        ]
+      },
+      {
+        "name": "Canciones 1984-1996: Best of Heroes del Silencio Disc 2",
+        "playcount": 14170,
+        "url": "https://www.last.fm/music/H%C3%A9roes+del+Silencio/Canciones+1984-1996:+Best+of+Heroes+del+Silencio+Disc+2",
+        "artist": {
+          "name": "Héroes del Silencio",
+          "mbid": "4bb712d6-8be9-4c09-810a-eb3bed2be345",
+          "url": "https://www.last.fm/music/H%C3%A9roes+del+Silencio"
+        },
+        "image": [
+          {
+            "#text": "",
+            "size": "small"
+          },
+          {
+            "#text": "",
+            "size": "medium"
+          },
+          {
+            "#text": "",
+            "size": "large"
+          },
+          {
+            "#text": "",
+            "size": "extralarge"
+          }
+        ]
+      },
+      {
+        "name": "El Ruído Y La Furia",
+        "playcount": 5248,
+        "url": "https://www.last.fm/music/H%C3%A9roes+del+Silencio/El+Ru%C3%ADdo+Y+La+Furia",
+        "artist": {
+          "name": "Héroes del Silencio",
+          "mbid": "4bb712d6-8be9-4c09-810a-eb3bed2be345",
+          "url": "https://www.last.fm/music/H%C3%A9roes+del+Silencio"
+        },
+        "image": [
+          {
+            "#text": "https://lastfm-img2.akamaized.net/i/u/34s/7f85860806f4441984d2d66ef8b4b4d2.png",
+            "size": "small"
+          },
+          {
+            "#text": "https://lastfm-img2.akamaized.net/i/u/64s/7f85860806f4441984d2d66ef8b4b4d2.png",
+            "size": "medium"
+          },
+          {
+            "#text": "https://lastfm-img2.akamaized.net/i/u/174s/7f85860806f4441984d2d66ef8b4b4d2.png",
+            "size": "large"
+          },
+          {
+            "#text": "https://lastfm-img2.akamaized.net/i/u/300x300/7f85860806f4441984d2d66ef8b4b4d2.png",
+            "size": "extralarge"
+          }
+        ]
+      },
+      {
+        "name": "Básico 96",
+        "playcount": 10349,
+        "url": "https://www.last.fm/music/H%C3%A9roes+del+Silencio/B%C3%A1sico+96",
+        "artist": {
+          "name": "Héroes del Silencio",
+          "mbid": "4bb712d6-8be9-4c09-810a-eb3bed2be345",
+          "url": "https://www.last.fm/music/H%C3%A9roes+del+Silencio"
+        },
+        "image": [
+          {
+            "#text": "https://lastfm-img2.akamaized.net/i/u/34s/cc6ad7ff884401d075e398408013f0bc.png",
+            "size": "small"
+          },
+          {
+            "#text": "https://lastfm-img2.akamaized.net/i/u/64s/cc6ad7ff884401d075e398408013f0bc.png",
+            "size": "medium"
+          },
+          {
+            "#text": "https://lastfm-img2.akamaized.net/i/u/174s/cc6ad7ff884401d075e398408013f0bc.png",
+            "size": "large"
+          },
+          {
+            "#text": "https://lastfm-img2.akamaized.net/i/u/300x300/cc6ad7ff884401d075e398408013f0bc.png",
+            "size": "extralarge"
+          }
+        ]
+      },
+      {
+        "name": "Tour 2007 CD 1",
+        "playcount": 32961,
+        "url": "https://www.last.fm/music/H%C3%A9roes+del+Silencio/Tour+2007+CD+1",
+        "artist": {
+          "name": "Héroes del Silencio",
+          "mbid": "4bb712d6-8be9-4c09-810a-eb3bed2be345",
+          "url": "https://www.last.fm/music/H%C3%A9roes+del+Silencio"
+        },
+        "image": [
+          {
+            "#text": "",
+            "size": "small"
+          },
+          {
+            "#text": "",
+            "size": "medium"
+          },
+          {
+            "#text": "",
+            "size": "large"
+          },
+          {
+            "#text": "",
+            "size": "extralarge"
+          }
+        ]
+      },
+      {
+        "name": "Original Masters Disc 1",
+        "playcount": 6179,
+        "url": "https://www.last.fm/music/H%C3%A9roes+del+Silencio/Original+Masters+Disc+1",
+        "artist": {
+          "name": "Héroes del Silencio",
+          "mbid": "4bb712d6-8be9-4c09-810a-eb3bed2be345",
+          "url": "https://www.last.fm/music/H%C3%A9roes+del+Silencio"
+        },
+        "image": [
+          {
+            "#text": "",
+            "size": "small"
+          },
+          {
+            "#text": "",
+            "size": "medium"
+          },
+          {
+            "#text": "",
+            "size": "large"
+          },
+          {
+            "#text": "",
+            "size": "extralarge"
+          }
+        ]
+      },
+      {
+        "name": "Guitar Hero III",
+        "playcount": 3347,
+        "url": "https://www.last.fm/music/H%C3%A9roes+del+Silencio/Guitar+Hero+III",
+        "artist": {
+          "name": "Héroes del Silencio",
+          "mbid": "4bb712d6-8be9-4c09-810a-eb3bed2be345",
+          "url": "https://www.last.fm/music/H%C3%A9roes+del+Silencio"
+        },
+        "image": [
+          {
+            "#text": "",
+            "size": "small"
+          },
+          {
+            "#text": "",
+            "size": "medium"
+          },
+          {
+            "#text": "",
+            "size": "large"
+          },
+          {
+            "#text": "",
+            "size": "extralarge"
+          }
+        ]
+      },
+      {
+        "name": "TITLE",
+        "playcount": 6528,
+        "url": "https://www.last.fm/music/H%C3%A9roes+del+Silencio/TITLE",
+        "artist": {
+          "name": "Héroes del Silencio",
+          "mbid": "4bb712d6-8be9-4c09-810a-eb3bed2be345",
+          "url": "https://www.last.fm/music/H%C3%A9roes+del+Silencio"
+        },
+        "image": [
+          {
+            "#text": "",
+            "size": "small"
+          },
+          {
+            "#text": "",
+            "size": "medium"
+          },
+          {
+            "#text": "",
+            "size": "large"
+          },
+          {
+            "#text": "",
+            "size": "extralarge"
+          }
+        ]
+      },
+      {
+        "name": "Grandes Exitos",
+        "playcount": 6115,
+        "url": "https://www.last.fm/music/H%C3%A9roes+del+Silencio/Grandes+Exitos",
+        "artist": {
+          "name": "Héroes del Silencio",
+          "mbid": "4bb712d6-8be9-4c09-810a-eb3bed2be345",
+          "url": "https://www.last.fm/music/H%C3%A9roes+del+Silencio"
+        },
+        "image": [
+          {
+            "#text": "",
+            "size": "small"
+          },
+          {
+            "#text": "",
+            "size": "medium"
+          },
+          {
+            "#text": "",
+            "size": "large"
+          },
+          {
+            "#text": "",
+            "size": "extralarge"
+          }
+        ]
+      },
+      {
+        "name": "Live In Germany (Digital Audio Album)",
+        "playcount": 6152,
+        "url": "https://www.last.fm/music/H%C3%A9roes+del+Silencio/Live+In+Germany+(Digital+Audio+Album)",
+        "artist": {
+          "name": "Héroes del Silencio",
+          "mbid": "4bb712d6-8be9-4c09-810a-eb3bed2be345",
+          "url": "https://www.last.fm/music/H%C3%A9roes+del+Silencio"
+        },
+        "image": [
+          {
+            "#text": "https://lastfm-img2.akamaized.net/i/u/34s/4f9b3bd6abe9462d8fd8521487c88856.png",
+            "size": "small"
+          },
+          {
+            "#text": "https://lastfm-img2.akamaized.net/i/u/64s/4f9b3bd6abe9462d8fd8521487c88856.png",
+            "size": "medium"
+          },
+          {
+            "#text": "https://lastfm-img2.akamaized.net/i/u/174s/4f9b3bd6abe9462d8fd8521487c88856.png",
+            "size": "large"
+          },
+          {
+            "#text": "https://lastfm-img2.akamaized.net/i/u/300x300/4f9b3bd6abe9462d8fd8521487c88856.png",
+            "size": "extralarge"
+          }
+        ]
+      },
+      {
+        "name": "Ediciones del Milenio",
+        "playcount": 2192,
+        "url": "https://www.last.fm/music/H%C3%A9roes+del+Silencio/Ediciones+del+Milenio",
+        "artist": {
+          "name": "Héroes del Silencio",
+          "mbid": "4bb712d6-8be9-4c09-810a-eb3bed2be345",
+          "url": "https://www.last.fm/music/H%C3%A9roes+del+Silencio"
+        },
+        "image": [
+          {
+            "#text": "",
+            "size": "small"
+          },
+          {
+            "#text": "",
+            "size": "medium"
+          },
+          {
+            "#text": "",
+            "size": "large"
+          },
+          {
+            "#text": "",
+            "size": "extralarge"
+          }
+        ]
+      },
+      {
+        "name": "karaoke",
+        "playcount": 5812,
+        "mbid": "3cdf8b27-5d7b-4ef4-a750-99d6afb5fc60",
+        "url": "https://www.last.fm/music/H%C3%A9roes+del+Silencio/karaoke",
+        "artist": {
+          "name": "Héroes del Silencio",
+          "mbid": "4bb712d6-8be9-4c09-810a-eb3bed2be345",
+          "url": "https://www.last.fm/music/H%C3%A9roes+del+Silencio"
+        },
+        "image": [
+          {
+            "#text": "https://lastfm-img2.akamaized.net/i/u/34s/763fc01e38d34c87cc30735bc443b1f4.png",
+            "size": "small"
+          },
+          {
+            "#text": "https://lastfm-img2.akamaized.net/i/u/64s/763fc01e38d34c87cc30735bc443b1f4.png",
+            "size": "medium"
+          },
+          {
+            "#text": "https://lastfm-img2.akamaized.net/i/u/174s/763fc01e38d34c87cc30735bc443b1f4.png",
+            "size": "large"
+          },
+          {
+            "#text": "https://lastfm-img2.akamaized.net/i/u/300x300/763fc01e38d34c87cc30735bc443b1f4.png",
+            "size": "extralarge"
+          }
+        ]
+      },
+      {
+        "name": "Canciones '84-'96",
+        "playcount": 10001,
+        "mbid": "74793eda-1d01-4f0a-935c-a68d8e938330",
+        "url": "https://www.last.fm/music/H%C3%A9roes+del+Silencio/Canciones+%2784-%2796",
+        "artist": {
+          "name": "Héroes del Silencio",
+          "mbid": "4bb712d6-8be9-4c09-810a-eb3bed2be345",
+          "url": "https://www.last.fm/music/H%C3%A9roes+del+Silencio"
+        },
+        "image": [
+          {
+            "#text": "https://lastfm-img2.akamaized.net/i/u/34s/635b78550ea14ceeccf5569738637c47.png",
+            "size": "small"
+          },
+          {
+            "#text": "https://lastfm-img2.akamaized.net/i/u/64s/635b78550ea14ceeccf5569738637c47.png",
+            "size": "medium"
+          },
+          {
+            "#text": "https://lastfm-img2.akamaized.net/i/u/174s/635b78550ea14ceeccf5569738637c47.png",
+            "size": "large"
+          },
+          {
+            "#text": "https://lastfm-img2.akamaized.net/i/u/300x300/635b78550ea14ceeccf5569738637c47.png",
+            "size": "extralarge"
+          }
+        ]
+      }
+    ],
+    "@attr": {
+      "artist": "Héroes del Silencio",
+      "page": "1",
+      "perPage": "50",
+      "totalPages": "195",
+      "total": "9710"
+    }
+  }
+}

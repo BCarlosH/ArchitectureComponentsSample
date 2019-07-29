@@ -22,20 +22,18 @@ class ArtistSearchViewModel(
     val error: LiveData<String> get() = _error
 
 
-    fun searchArtist(artist: String) {
-        scope.launch {
-            val value = lastFmRepository.getArtistSearchByName(artist)
+    fun searchArtist(artist: String) = scope.launch {
+        val value = lastFmRepository.getArtistSearchByName(artist)
 
-            when (value) {
-                is CallResult.Success -> {
-                    _artistSearchResponse.postValue(value.data)
-                    _error.postValue(null)
-                }
+        when (value) {
+            is CallResult.Success -> {
+                _artistSearchResponse.postValue(value.data)
+                _error.postValue(null)
+            }
 
-                is CallResult.Error -> {
-                    _artistSearchResponse.postValue(null)
-                    _error.postValue(value.exception.message)
-                }
+            is CallResult.Error -> {
+                _artistSearchResponse.postValue(null)
+                _error.postValue(value.exception.message)
             }
         }
     }

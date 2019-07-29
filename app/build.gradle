@@ -77,6 +77,8 @@ dependencies {
     //Room
     implementation "androidx.room:room-runtime:$room_version"
     kapt "androidx.room:room-compiler:$room_version"
+    // optional - Kotlin Extensions and Coroutines support for Room
+    implementation "androidx.room:room-ktx:$room_version"
 
     //Koin
     api "org.koin:koin-android:$koin_version"
@@ -102,6 +104,7 @@ dependencies {
     // Unit Testing
     testImplementation 'junit:junit:4.12'
     testImplementation "org.koin:koin-test:$koin_version"
+    testImplementation "android.arch.core:core-testing:1.1.1"
     testImplementation "com.squareup.okhttp3:mockwebserver:$okhttp3_version"
     testImplementation "org.mockito:mockito-core:$mockito_version"
     testImplementation "com.nhaarman.mockitokotlin2:mockito-kotlin:$mockitokotlin_version"
