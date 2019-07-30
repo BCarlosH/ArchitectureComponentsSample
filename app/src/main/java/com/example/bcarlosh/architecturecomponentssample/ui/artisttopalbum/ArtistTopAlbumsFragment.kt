@@ -67,7 +67,7 @@ class ArtistTopAlbumsFragment : Fragment() {
             when (it) {
                 is CallStatus.Loading -> showLoading()
                 is CallStatus.Success -> loadingSuccess(it.data)
-                is CallStatus.Error -> setErrorView(it.throwable.message)
+                is CallStatus.Error -> setErrorView(it.errorMessage)
             }
         })
     }

@@ -5,5 +5,6 @@ val appComponent = listOf(
     dbModule,
     networkModule,
     repositoryModule,
-    viewModelFactoryModule
+    viewModelFactoryModule,
+    providerModule
 )

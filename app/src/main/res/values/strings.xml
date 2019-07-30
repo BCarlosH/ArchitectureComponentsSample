@@ -17,6 +17,10 @@
     <string name="no_artists_on_search">No artist has been found</string>
     <string name="no_albums_found">No albums has been found</string>
     <string name="no_album_detail_found">No album detail has been found</string>
+    <string name="network_error_on_artist_search">Error occurred during fetching artist search</string>
+    <string name="network_error_on_top_albums">Error occurred during fetching top albums</string>
+    <string name="network_error_on_album_info">Error occurred during fetching album info</string>
+    <string name="connectivity_error">Limited or no connectivity</string>
     <string name="generic_error">An error occurred</string>
     <string name="got_it">Got it!</string>
 

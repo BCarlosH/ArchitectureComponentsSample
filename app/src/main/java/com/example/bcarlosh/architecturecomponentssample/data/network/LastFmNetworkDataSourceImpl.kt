@@ -3,6 +3,7 @@ package com.example.bcarlosh.architecturecomponentssample.data.network
 import com.example.bcarlosh.architecturecomponentssample.data.network.response.AlbumInfoResponse
 import com.example.bcarlosh.architecturecomponentssample.data.network.response.ArtistSearchResponse
 import com.example.bcarlosh.architecturecomponentssample.data.network.response.TopAlbumsResponse
+import com.example.bcarlosh.architecturecomponentssample.ui.error.ErrorType
 import java.io.IOException
 
 
@@ -17,7 +18,7 @@ class LastFmNetworkDataSourceImpl(
         return if (response.isSuccessful) {
             response.body()!!
         } else {
-            throw IOException("Error occurred during fetching artist search")
+            throw IOException(ErrorType.FETCHING_ARTIST_SEARCH.name)
         }
     }
 
@@ -27,7 +28,7 @@ class LastFmNetworkDataSourceImpl(
         return if (response.isSuccessful) {
             response.body()!!
         } else {
-            throw IOException("Error occurred during fetching top albums")
+            throw IOException(ErrorType.FETCHING_TOP_ALBUMS.name)
         }
     }
 
@@ -37,7 +38,7 @@ class LastFmNetworkDataSourceImpl(
         return if (response.isSuccessful) {
             response.body()!!
         } else {
-            throw IOException("Error occurred during fetching album info")
+            throw IOException(ErrorType.FETCHING_ALBUM_INFO.name)
         }
     }
 

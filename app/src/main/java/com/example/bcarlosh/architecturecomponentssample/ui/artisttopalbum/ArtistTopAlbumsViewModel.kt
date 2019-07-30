@@ -6,12 +6,14 @@ import com.example.bcarlosh.architecturecomponentssample.data.network.response.C
 import com.example.bcarlosh.architecturecomponentssample.data.network.response.TopAlbumsResponse
 import com.example.bcarlosh.architecturecomponentssample.data.repository.LastFmRepository
 import com.example.bcarlosh.architecturecomponentssample.ui.base.BaseScopedViewModel
+import com.example.bcarlosh.architecturecomponentssample.ui.error.ErrorMessageProvider
 import kotlinx.coroutines.launch
 
 
 class ArtistTopAlbumsViewModel(
     private val artistName: String,
-    private val lastFmRepository: LastFmRepository
+    private val lastFmRepository: LastFmRepository,
+    private val errorMessageProvider: ErrorMessageProvider
 ) : BaseScopedViewModel() {
 
     private val _topAlbumsListResponse = MutableLiveData<CallStatus<TopAlbumsResponse>>()
@@ -32,7 +34,7 @@ class ArtistTopAlbumsViewModel(
 
         runCatching { lastFmRepository.getArtistTopAlbums(artistName) }
             .onSuccess { _topAlbumsListResponse.postValue(CallStatus.Success(it)) }
-            .onFailure { _topAlbumsListResponse.postValue(CallStatus.Error(it)) }
+            .onFailure { _topAlbumsListResponse.postValue(CallStatus.Error(errorMessageProvider.proceed(it), it)) }
     }
 
 }

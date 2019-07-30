@@ -12,10 +12,10 @@ val viewModelFactoryModule = module {
 
     viewModel { StoredAlbumListViewModel(get()) }
 
-    viewModel { ArtistSearchViewModel(get()) }
+    viewModel { ArtistSearchViewModel(get(), get()) }
 
-    viewModel { (artistName: String) -> ArtistTopAlbumsViewModel(artistName, get()) }
+    viewModel { (artistName: String) -> ArtistTopAlbumsViewModel(artistName, get(), get()) }
 
-    viewModel { (artistName: String, albumName: String) -> AlbumDetailViewModel(artistName, albumName, get()) }
+    viewModel { (artistName: String, albumName: String) -> AlbumDetailViewModel(artistName, albumName, get(), get()) }
 
 }

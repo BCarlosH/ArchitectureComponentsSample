@@ -6,11 +6,13 @@ import com.example.bcarlosh.architecturecomponentssample.data.network.response.A
 import com.example.bcarlosh.architecturecomponentssample.data.network.response.CallStatus
 import com.example.bcarlosh.architecturecomponentssample.data.repository.LastFmRepository
 import com.example.bcarlosh.architecturecomponentssample.ui.base.BaseScopedViewModel
+import com.example.bcarlosh.architecturecomponentssample.ui.error.ErrorMessageProvider
 import kotlinx.coroutines.launch
 
 
 class ArtistSearchViewModel(
-    private val lastFmRepository: LastFmRepository
+    private val lastFmRepository: LastFmRepository,
+    private val errorMessageProvider: ErrorMessageProvider
 ) : BaseScopedViewModel() {
 
     var currentQueryValue: String = ""
@@ -25,7 +27,7 @@ class ArtistSearchViewModel(
 
         runCatching { lastFmRepository.getArtistSearchByName(artist) }
             .onSuccess { _artistSearchResponse.postValue(CallStatus.Success(it)) }
-            .onFailure { _artistSearchResponse.postValue(CallStatus.Error(it)) }
+            .onFailure { _artistSearchResponse.postValue(CallStatus.Error(errorMessageProvider.proceed(it), it)) }
     }
 
 }
