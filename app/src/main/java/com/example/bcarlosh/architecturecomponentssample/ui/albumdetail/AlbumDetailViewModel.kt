@@ -4,7 +4,7 @@ import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import com.example.bcarlosh.architecturecomponentssample.data.entity.album.AlbumInfo
 import com.example.bcarlosh.architecturecomponentssample.data.network.response.AlbumInfoResponse
-import com.example.bcarlosh.architecturecomponentssample.data.network.response.CallResult
+import com.example.bcarlosh.architecturecomponentssample.data.network.response.CallStatus
 import com.example.bcarlosh.architecturecomponentssample.data.repository.LastFmRepository
 import com.example.bcarlosh.architecturecomponentssample.ui.base.BaseScopedViewModel
 import kotlinx.coroutines.launch
@@ -16,39 +16,31 @@ class AlbumDetailViewModel(
     private val lastFmRepository: LastFmRepository
 ) : BaseScopedViewModel() {
 
-    private val _albumInfoResponse = MutableLiveData<AlbumInfoResponse>()
+    private val _albumInfoResponse = MutableLiveData<CallStatus<AlbumInfoResponse>>()
     private val _isStored = MutableLiveData<Boolean>()
-    private val _error = MutableLiveData<String>()
 
-    val albumInfoResponse: LiveData<AlbumInfoResponse> get() = _albumInfoResponse
+    val albumInfoResponse: LiveData<CallStatus<AlbumInfoResponse>> get() = _albumInfoResponse
     val isStored: LiveData<Boolean> get() = _isStored
-    val error: LiveData<String> get() = _error
 
     val currentAlbumName = albumName
     lateinit var currentAlbum: AlbumInfo
 
 
+    /**
+     * The LiveData's initialization remains inside the "init block" until Koin officially supports
+     * the ViewModel Saved State module.
+     */
     init {
         initAlbumInfoCall()
         updateIsStored()
     }
 
-    private fun initAlbumInfoCall() {
-        scope.launch {
-            val value = lastFmRepository.getAlbumInfo(artistName, albumName)
+    private fun initAlbumInfoCall() = scope.launch {
+        _albumInfoResponse.postValue(CallStatus.Loading)
 
-            when (value) {
-                is CallResult.Success -> {
-                    _albumInfoResponse.postValue(value.data)
-                    _error.postValue(null)
-                }
-
-                is CallResult.Error -> {
-                    _albumInfoResponse.postValue(null)
-                    _error.postValue(value.exception.message)
-                }
-            }
-        }
+        runCatching { lastFmRepository.getAlbumInfo(artistName, albumName) }
+            .onSuccess { _albumInfoResponse.postValue(CallStatus.Success(it)) }
+            .onFailure { _albumInfoResponse.postValue(CallStatus.Error(it)) }
     }
 
     private fun updateIsStored() {

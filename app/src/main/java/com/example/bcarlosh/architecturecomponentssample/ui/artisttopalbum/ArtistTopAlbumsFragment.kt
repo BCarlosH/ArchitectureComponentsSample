@@ -11,6 +11,8 @@ import androidx.navigation.Navigation
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.bcarlosh.architecturecomponentssample.R
 import com.example.bcarlosh.architecturecomponentssample.data.entity.album.Album
+import com.example.bcarlosh.architecturecomponentssample.data.network.response.CallStatus
+import com.example.bcarlosh.architecturecomponentssample.data.network.response.TopAlbumsResponse
 import kotlinx.android.synthetic.main.artist_top_albums_fragment.*
 import kotlinx.android.synthetic.main.error_view.*
 import kotlinx.android.synthetic.main.loading_view.*
@@ -58,24 +60,15 @@ class ArtistTopAlbumsFragment : Fragment() {
     }
 
     private fun bindUI() {
-        showLoading()
 
         viewModel.topAlbumsListResponse.observe(viewLifecycleOwner, Observer {
             if (it == null) return@Observer
 
-            if (it.topalbums == null || it.topalbums.album.isEmpty()) {
-                setErrorView(getString(R.string.no_albums_found))
-            } else {
-                albumsList.clear()
-                albumsList.addAll(it.topalbums.album)
-                updateRecyclerView()
+            when (it) {
+                is CallStatus.Loading -> showLoading()
+                is CallStatus.Success -> loadingSuccess(it.data)
+                is CallStatus.Error -> setErrorView(it.throwable.message)
             }
-        })
-
-        viewModel.error.observe(viewLifecycleOwner, Observer {
-            if (it == null) return@Observer
-
-            setErrorView(it)
         })
     }
 
@@ -97,18 +90,27 @@ class ArtistTopAlbumsFragment : Fragment() {
         hideLoading()
     }
 
-    private fun showAlbumDetail(artistName: String, albumName: String) {
-        val actionAlbumDetail =
-            ArtistTopAlbumsFragmentDirections.actionArtistTopAlbumsFragmentToAlbumDetailActivity(artistName, albumName)
-        Navigation.findNavController(top_albums_recycler_view).navigate(actionAlbumDetail)
+    private fun loadingSuccess(topAlbumsResponse: TopAlbumsResponse) {
+        if (topAlbumsResponse.topalbums == null || topAlbumsResponse.topalbums.album.isEmpty()) {
+            setErrorView(getString(R.string.no_albums_found))
+        } else {
+            albumsList.clear()
+            albumsList.addAll(topAlbumsResponse.topalbums.album)
+            updateRecyclerView()
+        }
     }
 
-    private fun setErrorView(errorMsg: String) {
+    private fun setErrorView(errorMsg: String?) {
         top_albums_recycler_view.visibility = View.INVISIBLE
         hideLoading()
 
         top_albums_error_view.visibility = View.VISIBLE
-        error_view_textView.text = errorMsg
+
+        if (errorMsg != null) {
+            error_view_textView.text = errorMsg
+        } else {
+            error_view_textView.text = getString(R.string.generic_error)
+        }
     }
 
     private fun showLoading() {
@@ -119,6 +121,12 @@ class ArtistTopAlbumsFragment : Fragment() {
 
     private fun hideLoading() {
         loadingView.visibility = View.GONE
+    }
+
+    private fun showAlbumDetail(artistName: String, albumName: String) {
+        val actionAlbumDetail =
+            ArtistTopAlbumsFragmentDirections.actionArtistTopAlbumsFragmentToAlbumDetailActivity(artistName, albumName)
+        Navigation.findNavController(top_albums_recycler_view).navigate(actionAlbumDetail)
     }
 
     override fun onDestroy() {

@@ -5,9 +5,7 @@ import com.example.bcarlosh.architecturecomponentssample.data.entity.album.Album
 import com.example.bcarlosh.architecturecomponentssample.data.network.LastFmNetworkDataSource
 import com.example.bcarlosh.architecturecomponentssample.data.network.response.AlbumInfoResponse
 import com.example.bcarlosh.architecturecomponentssample.data.network.response.ArtistSearchResponse
-import com.example.bcarlosh.architecturecomponentssample.data.network.response.CallResult
 import com.example.bcarlosh.architecturecomponentssample.data.network.response.TopAlbumsResponse
-import com.example.bcarlosh.architecturecomponentssample.helpers.safeApiCall
 
 
 class LastFmRepositoryImpl(
@@ -16,28 +14,22 @@ class LastFmRepositoryImpl(
 ) : LastFmRepository {
 
 
-    override suspend fun getArtistSearchByName(artist: String): CallResult<ArtistSearchResponse> = safeApiCall(
-        call = { lastFmNetworkDataSource.fetchArtistSearchByName(artist) },
-        errorMessage = "An error occurred"
-    )
+    override suspend fun getArtistSearchByName(artist: String): ArtistSearchResponse {
+        return lastFmNetworkDataSource.fetchArtistSearchByName(artist)
+    }
 
-    override suspend fun getArtistTopAlbums(artist: String): CallResult<TopAlbumsResponse> = safeApiCall(
-        call = { lastFmNetworkDataSource.fetchArtistTopAlbums(artist) },
-        errorMessage = "An error occurred"
-    )
+    override suspend fun getArtistTopAlbums(artist: String): TopAlbumsResponse {
+        return lastFmNetworkDataSource.fetchArtistTopAlbums(artist)
+    }
 
-    override suspend fun getAlbumInfo(artist: String, album: String): CallResult<AlbumInfoResponse> {
+    override suspend fun getAlbumInfo(artist: String, album: String): AlbumInfoResponse {
         val albumInfo = albumDao.getStoredAlbumByName(album)
 
         return if (albumInfo != null) {
-            CallResult.Success(AlbumInfoResponse(albumInfo))
+            AlbumInfoResponse(albumInfo)
         } else {
-            safeApiCall(
-                call = { lastFmNetworkDataSource.fetchAlbumInfo(artist, album) },
-                errorMessage = "An error occurred"
-            )
+            lastFmNetworkDataSource.fetchAlbumInfo(artist, album)
         }
-
     }
 
     override suspend fun storeAlbum(album: AlbumInfo) {

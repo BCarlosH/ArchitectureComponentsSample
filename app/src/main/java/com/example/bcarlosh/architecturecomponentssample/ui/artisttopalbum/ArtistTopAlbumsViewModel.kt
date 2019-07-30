@@ -2,7 +2,7 @@ package com.example.bcarlosh.architecturecomponentssample.ui.artisttopalbum
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
-import com.example.bcarlosh.architecturecomponentssample.data.network.response.CallResult
+import com.example.bcarlosh.architecturecomponentssample.data.network.response.CallStatus
 import com.example.bcarlosh.architecturecomponentssample.data.network.response.TopAlbumsResponse
 import com.example.bcarlosh.architecturecomponentssample.data.repository.LastFmRepository
 import com.example.bcarlosh.architecturecomponentssample.ui.base.BaseScopedViewModel
@@ -14,33 +14,25 @@ class ArtistTopAlbumsViewModel(
     private val lastFmRepository: LastFmRepository
 ) : BaseScopedViewModel() {
 
-    private val _topAlbumsListResponse = MutableLiveData<TopAlbumsResponse>()
-    private val _error = MutableLiveData<String>()
+    private val _topAlbumsListResponse = MutableLiveData<CallStatus<TopAlbumsResponse>>()
 
-    val topAlbumsListResponse: LiveData<TopAlbumsResponse> get() = _topAlbumsListResponse
-    val error: LiveData<String> get() = _error
+    val topAlbumsListResponse: LiveData<CallStatus<TopAlbumsResponse>> get() = _topAlbumsListResponse
 
 
+    /**
+     * The LiveData's initialization remains inside the "init block" until Koin officially supports
+     * the ViewModel Saved State module.
+     */
     init {
-        initTopAlbumsCall()
+        getTopAlbums()
     }
 
-    private fun initTopAlbumsCall() {
-        scope.launch {
-            val value = lastFmRepository.getArtistTopAlbums(artistName)
+    fun getTopAlbums() = scope.launch {
+        _topAlbumsListResponse.postValue(CallStatus.Loading)
 
-            when (value) {
-                is CallResult.Success -> {
-                    _topAlbumsListResponse.postValue(value.data)
-                    _error.postValue(null)
-                }
-
-                is CallResult.Error -> {
-                    _topAlbumsListResponse.postValue(null)
-                    _error.postValue(value.exception.message)
-                }
-            }
-        }
+        runCatching { lastFmRepository.getArtistTopAlbums(artistName) }
+            .onSuccess { _topAlbumsListResponse.postValue(CallStatus.Success(it)) }
+            .onFailure { _topAlbumsListResponse.postValue(CallStatus.Error(it)) }
     }
 
 }

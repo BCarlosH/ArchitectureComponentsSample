@@ -11,6 +11,8 @@ import androidx.navigation.Navigation
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.bcarlosh.architecturecomponentssample.R
 import com.example.bcarlosh.architecturecomponentssample.data.entity.artist.Artist
+import com.example.bcarlosh.architecturecomponentssample.data.network.response.ArtistSearchResponse
+import com.example.bcarlosh.architecturecomponentssample.data.network.response.CallStatus
 import com.example.bcarlosh.architecturecomponentssample.ui.MainActivity
 import kotlinx.android.synthetic.main.artist_search_fragment.*
 import kotlinx.android.synthetic.main.error_view.*
@@ -50,19 +52,11 @@ class ArtistSearchFragment : Fragment() {
         viewModel.artistSearchResponse.observe(viewLifecycleOwner, Observer {
             if (it == null) return@Observer
 
-            if (it.results.artistmatches.artist.isEmpty()) {
-                setErrorView(getString(R.string.no_artists_on_search))
-            } else {
-                artistList.clear()
-                artistList.addAll(it.results.artistmatches.artist)
-                updateRecyclerView()
+            when (it) {
+                is CallStatus.Loading -> showLoading()
+                is CallStatus.Success -> loadingSuccess(it.data)
+                is CallStatus.Error -> setErrorView(it.throwable.message)
             }
-        })
-
-        viewModel.error.observe(viewLifecycleOwner, Observer {
-            if (it == null) return@Observer
-
-            setErrorView(it)
         })
     }
 
@@ -84,12 +78,27 @@ class ArtistSearchFragment : Fragment() {
         hideLoading()
     }
 
-    private fun setErrorView(errorMsg: String) {
+    private fun loadingSuccess(artistSearchResponse: ArtistSearchResponse) {
+        if (artistSearchResponse.results.artistmatches.artist.isEmpty()) {
+            setErrorView(getString(R.string.no_artists_on_search))
+        } else {
+            artistList.clear()
+            artistList.addAll(artistSearchResponse.results.artistmatches.artist)
+            updateRecyclerView()
+        }
+    }
+
+    private fun setErrorView(errorMsg: String?) {
         artist_search_recycler_view.visibility = View.INVISIBLE
         hideLoading()
 
         artist_search_error_view.visibility = View.VISIBLE
-        error_view_textView.text = errorMsg
+
+        if (errorMsg != null) {
+            error_view_textView.text = errorMsg
+        } else {
+            error_view_textView.text = getString(R.string.generic_error)
+        }
     }
 
     private fun showLoading() {
@@ -163,7 +172,6 @@ class ArtistSearchFragment : Fragment() {
 
     private fun onQueryTextSubmitted(artist: String) {
         if (artist.isNotEmpty()) {
-            showLoading()
             searchView.clearFocus()
             viewModel.searchArtist(artist)
         }

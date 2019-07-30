@@ -11,6 +11,8 @@ import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
 import com.bumptech.glide.load.engine.DiskCacheStrategy
 import com.example.bcarlosh.architecturecomponentssample.R
+import com.example.bcarlosh.architecturecomponentssample.data.network.response.AlbumInfoResponse
+import com.example.bcarlosh.architecturecomponentssample.data.network.response.CallStatus
 import com.example.bcarlosh.architecturecomponentssample.helpers.GlideApp
 import com.google.android.material.snackbar.Snackbar
 import kotlinx.android.synthetic.main.activity_album_detail.*
@@ -43,23 +45,15 @@ class AlbumDetailActivity : AppCompatActivity() {
     }
 
     private fun bindUI() {
+
         viewModel.albumInfoResponse.observe(this, Observer {
             if (it == null) return@Observer
 
-            if (it.album == null || it.album.tracks.track.isEmpty()) {
-                setErrorView()
-            } else {
-                setAlbumImage(it.album.image)
-                showStoreAlbumFab()
+            when (it) {
+                is CallStatus.Success -> loadingSuccess(it.data)
+                is CallStatus.Error -> setErrorView()
             }
         })
-
-        viewModel.error.observe(this, Observer {
-            if (it == null) return@Observer
-
-            setErrorView()
-        })
-
     }
 
     private fun initViewModel() {
@@ -80,6 +74,15 @@ class AlbumDetailActivity : AppCompatActivity() {
 
     private fun loadFragment(fragment: Fragment) {
         supportFragmentManager.beginTransaction().add(R.id.album_detail_container, fragment).commit()
+    }
+
+    private fun loadingSuccess(albumInfoResponse: AlbumInfoResponse) {
+        if (albumInfoResponse.album == null || albumInfoResponse.album.tracks.track.isEmpty()) {
+            setErrorView()
+        } else {
+            setAlbumImage(albumInfoResponse.album.image)
+            showStoreAlbumFab()
+        }
     }
 
     //region FloatingActionButton functionality

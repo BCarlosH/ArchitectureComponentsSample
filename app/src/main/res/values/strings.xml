@@ -17,6 +17,7 @@
     <string name="no_artists_on_search">No artist has been found</string>
     <string name="no_albums_found">No albums has been found</string>
     <string name="no_album_detail_found">No album detail has been found</string>
+    <string name="generic_error">An error occurred</string>
     <string name="got_it">Got it!</string>
 
 </resources>
