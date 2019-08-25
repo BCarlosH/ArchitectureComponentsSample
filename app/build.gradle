@@ -12,7 +12,7 @@ apply plugin: "androidx.navigation.safeargs"
 android {
 
     compileSdkVersion 28
-    buildToolsVersion "29.0.0"
+    buildToolsVersion "29.0.2"
     defaultConfig {
         applicationId "com.example.bcarlosh.architecturecomponentssample"
         minSdkVersion 21

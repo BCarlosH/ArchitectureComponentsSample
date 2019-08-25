@@ -1,13 +1,11 @@
 package com.example.bcarlosh.architecturecomponentssample
 
-import android.content.Context
 import androidx.arch.core.executor.testing.InstantTaskExecutorRule
 import com.example.bcarlosh.architecturecomponentssample.base.BaseUT
 import com.example.bcarlosh.architecturecomponentssample.data.entity.Image
 import com.example.bcarlosh.architecturecomponentssample.data.entity.album.AlbumInfo
 import com.example.bcarlosh.architecturecomponentssample.data.entity.album.Tags
 import com.example.bcarlosh.architecturecomponentssample.data.entity.album.Tracks
-import com.example.bcarlosh.architecturecomponentssample.data.network.response.CallResult
 import com.example.bcarlosh.architecturecomponentssample.data.repository.LastFmRepository
 import com.example.bcarlosh.architecturecomponentssample.di.configureAppComponent
 import com.nhaarman.mockitokotlin2.doReturn
@@ -21,7 +19,6 @@ import org.junit.Test
 import org.koin.android.ext.koin.androidContext
 import org.koin.core.context.startKoin
 import org.koin.test.inject
-import org.mockito.Mockito
 import java.net.HttpURLConnection
 
 
@@ -40,7 +37,7 @@ class LastFmRepositoryTest : BaseUT() {
         super.setUp()
 
         startKoin {
-            androidContext(Mockito.mock(Context::class.java))
+            androidContext(mock())
             modules(configureAppComponent(getMockUrl()))
         }
     }
@@ -56,7 +53,7 @@ class LastFmRepositoryTest : BaseUT() {
             val value = lastFmRepository.getArtistSearchByName("Heroes del")
 
             /* Then */
-            (value as CallResult.Success).data.results.artistmatches.let { result ->
+            value.results.artistmatches.let { result ->
                 assertEquals(30, result.artist.size)
                 assertEquals("Héroes del Silencio", result.artist[0].name)
                 assertEquals("265968", result.artist[0].listeners)
@@ -70,23 +67,6 @@ class LastFmRepositoryTest : BaseUT() {
     }
 
     @Test
-    fun `it should have failure finding user by name`() {
-        mockHttpResponse("artist_search.json", HttpURLConnection.HTTP_INTERNAL_ERROR)
-
-        runBlocking {
-
-            /* When */
-            val value = lastFmRepository.getArtistSearchByName("Heroes del")
-
-            /* Then */
-            assertEquals(
-                "Error occurred during fetching artist search",
-                (value as CallResult.Error).exception.message
-            )
-        }
-    }
-
-    @Test
     fun `it should have success returning top albums from artist`() {
         mockHttpResponse("artist_top_albums.json", HttpURLConnection.HTTP_OK)
 
@@ -96,7 +76,7 @@ class LastFmRepositoryTest : BaseUT() {
             val value = lastFmRepository.getArtistTopAlbums("Heroes del Silencio")
 
             /* Then */
-            (value as CallResult.Success).data.topalbums.let { result ->
+            value.topalbums.let { result ->
                 assertEquals(50, result.album.size)
                 assertEquals("Senderos De Traición", result.album[0].name)
                 assertEquals("Héroes del Silencio", result.album[0].artist.name)
@@ -106,23 +86,6 @@ class LastFmRepositoryTest : BaseUT() {
                     result.album[0].image
                 )
             }
-        }
-    }
-
-    @Test
-    fun `it should have failure returning top albums from artist`() {
-        mockHttpResponse("artist_top_albums.json", HttpURLConnection.HTTP_INTERNAL_ERROR)
-
-        runBlocking {
-
-            /* When */
-            val value = lastFmRepository.getArtistTopAlbums("Heroes del Silencio")
-
-            /* Then */
-            assertEquals(
-                "Error occurred during fetching top albums",
-                (value as CallResult.Error).exception.message
-            )
         }
     }
 
@@ -137,7 +100,7 @@ class LastFmRepositoryTest : BaseUT() {
             val value = lastFmRepository.getAlbumInfo("Heroes del Silencio", "Senderos De Traición")
 
             /* Then */
-            (value as CallResult.Success).data.album.let { result ->
+            value.album.let { result ->
                 assertEquals("Héroes del Silencio", result.artist)
                 assertEquals("Senderos De Traición", result.name)
                 assertEquals(12, result.tracks.track.size)
@@ -153,35 +116,30 @@ class LastFmRepositoryTest : BaseUT() {
 
     @Ignore
     @Test
-    fun `it should have failure returning album info from network`() {
-        mockHttpResponse("artist_top_albums.json", HttpURLConnection.HTTP_INTERNAL_ERROR)
-
-        runBlocking {
-            /* When */
-            val value = lastFmRepository.getAlbumInfo("Heroes del Silencio", "Senderos De Traición")
-
-            /* Then */
-            assertEquals(
-                "Error occurred during fetching album info",
-                (value as CallResult.Error).exception.message
-            )
-        }
-    }
-
-    @Ignore
-    @Test
     fun `it should store an album in database`() {
         val album = AlbumInfo(
             "Heroes del Silencio",
             listOf(
-                Image("small", "https://lastfm-img2.akamaized.net/i/u/34s/f5f80c8d6aee45da83bcfc3d8b8477b1.png"),
-                Image("medium", "https://lastfm-img2.akamaized.net/i/u/64s/f5f80c8d6aee45da83bcfc3d8b8477b1.png"),
-                Image("large", "https://lastfm-img2.akamaized.net/i/u/174s/f5f80c8d6aee45da83bcfc3d8b8477b1.png"),
+                Image(
+                    "small",
+                    "https://lastfm-img2.akamaized.net/i/u/34s/f5f80c8d6aee45da83bcfc3d8b8477b1.png"
+                ),
+                Image(
+                    "medium",
+                    "https://lastfm-img2.akamaized.net/i/u/64s/f5f80c8d6aee45da83bcfc3d8b8477b1.png"
+                ),
+                Image(
+                    "large",
+                    "https://lastfm-img2.akamaized.net/i/u/174s/f5f80c8d6aee45da83bcfc3d8b8477b1.png"
+                ),
                 Image(
                     "extralarge",
                     "https://lastfm-img2.akamaized.net/i/u/300x300/f5f80c8d6aee45da83bcfc3d8b8477b1.png"
                 ),
-                Image("mega", "https://lastfm-img2.akamaized.net/i/u/300x300/f5f80c8d6aee45da83bcfc3d8b8477b1.png")
+                Image(
+                    "mega",
+                    "https://lastfm-img2.akamaized.net/i/u/300x300/f5f80c8d6aee45da83bcfc3d8b8477b1.png"
+                )
             ),
             "100019",
             "Senderos De Traición",

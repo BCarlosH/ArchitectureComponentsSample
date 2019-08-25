@@ -1,19 +1,16 @@
 package com.example.bcarlosh.architecturecomponentssample
 
 import android.content.Context
-import com.example.bcarlosh.architecturecomponentssample.di.dbModule
-import com.example.bcarlosh.architecturecomponentssample.di.networkModule
-import com.example.bcarlosh.architecturecomponentssample.di.repositoryModule
-import com.example.bcarlosh.architecturecomponentssample.di.viewModelFactoryModule
+import com.example.bcarlosh.architecturecomponentssample.di.*
 import com.example.bcarlosh.architecturecomponentssample.ui.albumdetail.AlbumDetailViewModel
 import com.example.bcarlosh.architecturecomponentssample.ui.artisttopalbum.ArtistTopAlbumsViewModel
+import com.nhaarman.mockitokotlin2.mock
 import org.junit.Before
 import org.junit.Test
 import org.koin.android.ext.koin.androidContext
 import org.koin.core.parameter.parametersOf
 import org.koin.dsl.koinApplication
 import org.koin.test.check.checkModules
-import org.mockito.Mockito.mock
 
 
 class ModuleTest {
@@ -23,7 +20,7 @@ class ModuleTest {
 
     @Before
     fun setUp() {
-        context = mock(Context::class.java)
+        context = mock()
     }
 
     @Test
@@ -37,6 +34,7 @@ class ModuleTest {
                     dbModule,
                     networkModule,
                     repositoryModule,
+                    providerModule,
                     viewModelFactoryModule
                 )
             )
