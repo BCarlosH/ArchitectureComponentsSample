@@ -144,29 +144,11 @@ class AlbumDetailActivity : AppCompatActivity() {
         if (isStored) {
 
             animation.start()
-            Handler().postDelayed({
-                store_delete_album_fab.setImageDrawable(getDrawable(R.drawable.ic_store_delete_album))
-
-                /**
-                 * This line is from a work around related to this material design library bug:
-                 * https://issuetracker.google.com/issues/111316656
-                 */
-                store_delete_album_fab.imageMatrix = Matrix()
-            }, 200)
-
+            store_delete_album_fab.setImageDrawable(getDrawable(R.drawable.ic_store_delete_album))
         } else {
 
             animation.start()
-            Handler().postDelayed({
-                store_delete_album_fab.setImageDrawable(getDrawable(R.drawable.ic_delete_store_album))
-
-                /**
-                 * This line is from a work around related to this material design library bug:
-                 * https://issuetracker.google.com/issues/111316656
-                 */
-                store_delete_album_fab.imageMatrix = Matrix()
-            }, 200)
-
+            store_delete_album_fab.setImageDrawable(getDrawable(R.drawable.ic_delete_store_album))
         }
     }
     //endregion
