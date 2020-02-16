@@ -1,9 +1,7 @@
 package com.example.bcarlosh.architecturecomponentssample.ui.albumdetail
 
-import android.graphics.Matrix
 import android.graphics.drawable.AnimationDrawable
 import android.os.Bundle
-import android.os.Handler
 import android.view.MenuItem
 import android.widget.ImageView
 import androidx.appcompat.app.AppCompatActivity
