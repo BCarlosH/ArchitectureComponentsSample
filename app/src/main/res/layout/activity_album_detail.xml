@@ -55,10 +55,10 @@
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
             android:id="@+id/store_delete_album_fab"
-            app:layout_anchor="@id/app_bar_layout"
-            app:layout_anchorGravity="bottom|right|end"
             style="@style/FabStyle"
             android:visibility="gone"
+            app:layout_anchor="@id/app_bar_layout"
+            app:layout_anchorGravity="bottom|right|end"
             tools:visibility="visible"
             tools:src="@drawable/ic_cloud_download_black_24dp"/>
 

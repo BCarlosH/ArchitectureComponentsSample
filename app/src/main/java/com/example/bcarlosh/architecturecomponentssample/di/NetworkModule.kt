@@ -79,7 +79,7 @@ private fun provideQueryParametersInterceptor(): Interceptor {
 
 object NetworkDataSourceProperties {
 
-    const val BASE_URL = "http://ws.audioscrobbler.com/2.0/"
+    const val BASE_URL = "https://ws.audioscrobbler.com/2.0/"
     const val JSON_FORMAT_QUERY_PARAMETER = "json"
     const val API_KEY = "292909677dcdb20e1a3f9c0a81882636"
 
